@@ -4,11 +4,13 @@ import Hero from "./sections/Hero";
 function App() {
   return (
     <div>
-      <header>
+      <header className="md:absolute md:z-10 w-full">
         <Nav />
       </header>
       <main>
-        <Hero />
+        <section className="bg-lights-gray cut-bottom-right">
+          <Hero />
+        </section>
       </main>
     </div>
   )

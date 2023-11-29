@@ -21,10 +21,18 @@
     margin: 0 auto;
   }
 
+  .cut-bottom-right {
+      clip-path: polygon(0 0,100% 0,100% calc(100% - 200px),calc(100% - 400px) 100%,0 100%);
+  }
+
   /* 
   .input {
     @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
   } */
+
+  .input {
+    @apply outline-none;
+  }
 }
 
 @layer utilities {

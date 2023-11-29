@@ -30,7 +30,7 @@ export default {
         "accent-red": "#FF6550",
         "accent-yellow": "#FFB836",
         "neutral-100": "#25324B",
-        "neutral-80": "#25324B",
+        "neutral-80": "#515B6F",
         "neutral-60": "#7C8493",
         "neutral-40": "#A8ADB7",
         "neutral-20": "#D6DDEB",
@@ -40,7 +40,7 @@ export default {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
       },
       backgroundImage: {
-        'hero': "url('assets/images/hero-background.svg')",
+        'hero': "url('assets/images/hero_background.svg')",
       },
       screens: {
         "wide": "1440px"
