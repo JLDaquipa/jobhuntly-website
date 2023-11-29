@@ -1,12 +1,16 @@
-import { drawline } from "./assets/images"
+import Nav from "./components/Nav";
+import Hero from "./sections/Hero";
 
 function App() {
   return (
-    <h1 className="text-6xl font-clashDisplay font-semibold">
-      Discover <br /> more than 
-      <span className="text-accent-blue block"> 5000+ Jobs</span>
-      <img src={drawline} width={455} />
-    </h1>
+    <div>
+      <header>
+        <Nav />
+      </header>
+      <main>
+        <Hero />
+      </main>
+    </div>
   )
 }
 
