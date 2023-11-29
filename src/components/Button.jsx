@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
 
 const Button = ({label, action, style}) => {
-  let buttonStyle = "text-primary-blue bg-white";
+  let buttonStyle = "text-brand-primary";
 
   if(style === "outlined"){
-    buttonStyle = "text-primary-blue bg-white border-solid border-primary-blue";
+    buttonStyle = "text-brand-primary bg-white border-solid border-brand-primary";
   } else if(style === "filled") {
-    buttonStyle = "bg-primary-blue text-white";
+    buttonStyle = "bg-brand-primary text-white";
   }
 
   return (
