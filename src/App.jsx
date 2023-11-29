@@ -8,7 +8,7 @@ function App() {
         <Nav />
       </header>
       <main>
-        <section className="bg-lights-gray cut-bottom-right">
+        <section className="bg-lights-gray lg:cut-bottom-right">
           <Hero />
         </section>
       </main>
