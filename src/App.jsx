@@ -1,5 +1,6 @@
 import Nav from "./components/Nav";
 import Hero from "./sections/Hero";
+import Company from "./sections/Company";
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
       <main>
         <section className="bg-lights-gray lg:cut-bottom-right">
           <Hero />
+        </section>
+        <section>
+          <Company />
         </section>
       </main>
     </div>
