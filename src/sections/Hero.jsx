@@ -15,7 +15,7 @@ const Hero = () => {
         <p className="text-neutral-100 mt-4">Popular : UI Designer, UX Researcher, Android, Admin</p>
       </div>
       <div>
-        <img className="absolute bottom-1 right-[7rem] z-10 max-lg:hidden" src={heroImage} alt="Hero Image" width={500}/>
+        <img className="absolute bottom-0 right-[7rem] z-10 max-lg:hidden" src={heroImage} alt="Hero Image" width={500}/>
       </div>
       
       <div className="w-2/3 bg-hero bg-cover h-full absolute right-0 top-0 z-1">
