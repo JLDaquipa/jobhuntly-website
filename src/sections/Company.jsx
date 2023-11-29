@@ -8,7 +8,7 @@ import {
 
 const Company = () => {
   return (
-    <div className="max-container padding-x lg:py-12 py-10">
+    <div className="max-container lg:py-12 py-10">
       <p className="font-epilogue text-lg text-neutral-40 mb-8">Companies we helped grow</p>
       <div className="flex justify-between gap-8 flex-wrap">
         <img src={vodafoneLogo} alt="Vodafone Logo" />

@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Nav = () => {
   return (
-    <nav className="max-container padding-x flex justify-between items-center">
+    <nav className="max-container min-wide:padding-x flex justify-between items-center">
 
       <div className="flex items-center py-3 gap-12">
         <img src={textLogo} alt="Jobhuntly Logo" />
