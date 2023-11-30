@@ -1,6 +1,7 @@
 import Nav from "./components/Nav";
 import Hero from "./sections/Hero";
 import Company from "./sections/Company";
+import Category from "./sections/Category";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </section>
         <section className="padding-x">
           <Company />
+        </section>
+        <section className="padding-x">
+          <Category />
         </section>
       </main>
     </div>
