@@ -1,3 +1,4 @@
+import 'remixicon/fonts/remixicon.css';
 import Nav from "./components/Nav";
 import Hero from "./sections/Hero";
 import Company from "./sections/Company";
