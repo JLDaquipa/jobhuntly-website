@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 const Button = ({label, action, style}) => {
-  let buttonStyle = "text-brand-primary";
+  let buttonStyle = "text-brand-primary bg-white";
 
   if(style === "outlined"){
     buttonStyle = "text-brand-primary bg-white border-solid border-brand-primary";
@@ -11,7 +11,7 @@ const Button = ({label, action, style}) => {
 
   return (
     <button 
-      className={`px-6 py-3 font-bold cursor-pointer font-epilogue ${buttonStyle} max-md:w-full`} 
+      className={`px-6 py-3 font-bold cursor-pointer font-epilogue ${buttonStyle} w-full lg:w-max`} 
       onClick={() => action}
     >
       {label}

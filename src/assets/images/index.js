@@ -8,6 +8,7 @@ import intelLogo from './intel_logo.svg';
 import teslaLogo from './tesla_logo.svg';
 import amdLogo from './amd_logo.svg';
 import talkitLogo from './talkit_logo.svg';
+import companyDashboardImg from './company_dashboard.png';
 
 
 export { 
@@ -21,5 +22,6 @@ export {
   teslaLogo,
   amdLogo,
   talkitLogo,
+  companyDashboardImg,
 };
 

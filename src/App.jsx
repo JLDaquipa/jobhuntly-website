@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Hero from "./sections/Hero";
 import Company from "./sections/Company";
 import Category from "./sections/Category";
+import CTA from './sections/CTA';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </section>
         <section className="padding-x">
           <Category />
+        </section>
+        <section className='padding-x lg:py-16'>
+          <CTA />
         </section>
       </main>
     </div>

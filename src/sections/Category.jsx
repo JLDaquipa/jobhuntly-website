@@ -3,7 +3,7 @@ import JobCategory from "../components/JobCategory";
 
 const Category = () => {
   return (
-    <div className="max-container pb-10 lg:pt-20 flex flex-col relative gap-6 lg:gap-0">
+    <div className="max-container pb-10 lg:pb-0 lg:pt-20 flex flex-col relative gap-6 lg:gap-0">
       <h2 className="font-clashDisplay text-neutral-100 text-[32px] max-lg:text-center lg:text-4xl font-semibold lg:mb-12">
         Explore by 
         <span className="text-accent-blue"> category</span>
