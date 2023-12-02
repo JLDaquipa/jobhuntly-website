@@ -1,5 +1,6 @@
 import drawline from './drawline.svg';
-import textLogo from './textLogo.svg';
+import textLogoBlack from './textLogo_black.svg';
+import textLogoWhite from './textLogo_white.svg';
 import logo from './logo.svg';
 import heroBackground from './hero_background.svg';
 import heroImage from './hero_image.png';
@@ -13,7 +14,8 @@ import companyDashboardImg from './company_dashboard.png';
 
 export { 
   drawline, 
-  textLogo,
+  textLogoBlack,
+  textLogoWhite,
   logo,
   heroBackground,
   heroImage,

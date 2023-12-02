@@ -1,4 +1,4 @@
-import { textLogo } from "../assets/images";
+import { textLogoBlack } from "../assets/images";
 import { hamburger } from "../assets/icons";
 import Button from "./Button";
 
@@ -7,7 +7,7 @@ const Nav = () => {
     <nav className="max-container min-wide:padding-x flex justify-between items-center">
 
       <div className="flex items-center py-3 gap-12">
-        <img src={textLogo} alt="Jobhuntly Logo" />
+        <img src={textLogoBlack} alt="Jobhuntly Logo" />
         <ul className="flex gap-4 font-epilogue max-lg:hidden">
           <li className="cursor-pointer">Find Jobs</li>
           <li className="cursor-pointer">Browse Companies</li>

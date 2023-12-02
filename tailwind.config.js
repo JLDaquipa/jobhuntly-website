@@ -9,7 +9,7 @@ export default {
       xs: ['12px', '16px'],
       sm: ['14px', '20px'],
       base: ['16px', '19.5px'],
-      lg: ['18px', '21.94px'],
+      lg: ['18px', '160%'],
       xl: ['20px', '24.38px'],
       '2xl': ['24px', '29.26px'],
       '3xl': ['28px', '50px'],

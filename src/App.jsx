@@ -6,6 +6,7 @@ import Category from "./sections/Category";
 import CTA from './sections/CTA';
 import FeaturedJobs from './sections/FeaturedJobs';
 import LatestJob from './sections/LatestJob';
+import Footer from './sections/Footer';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
           </div>
         </section>
       </main>
+      <footer className='padding-x bg-[#202430] py-10 lg:py-16'>
+        <Footer />
+      </footer>
     </div>
   )
 }

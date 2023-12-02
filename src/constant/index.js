@@ -95,6 +95,76 @@ export const categoryLabelColor = {
   },
 }
 
+export const aboutLinks = [
+  {
+    name: "Companies",
+    url: "#"
+  },
+  {
+    name: "Pricing",
+    url: "#"
+  },
+  {
+    name: "Terms",
+    url: "#"
+  },
+  {
+    name: "Advice",
+    url: "#"
+  },
+  {
+    name: "Privacy Policy",
+    url: "#"
+  },
+];
+
+export const resourceLinks = [
+  {
+    name: "Help Docs",
+    url: "#"
+  },
+  {
+    name: "Guide",
+    url: "#"
+  },
+  {
+    name: "Updates",
+    url: "#"
+  },
+  {
+    name: "Contact Us",
+    url: "#"
+  },
+]
+
+export const socialLinks = [
+  {
+    name: "Facebook",
+    icon: "ri-facebook-fill",
+    url: "#"
+  },
+  {
+    name: "Instagram",
+    icon: "ri-instagram-line",
+    url: "#"
+  },
+  {
+    name: "Dribbble",
+    icon: "ri-dribbble-line",
+    url: "#"
+  },
+  {
+    name: "LinkedIn",
+    icon: "ri-linkedin-fill",
+    url: "#"
+  },
+  {
+    name: "Twitter",
+    icon: "ri-twitter-fill",
+    url: "#"
+  },
+]
+
 export const jobList = [
   {
     companyName: "Revolut",
