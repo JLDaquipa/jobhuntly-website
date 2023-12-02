@@ -76,7 +76,26 @@ export const categories = [
   },
 ];
 
-export const jobsList = [
+export const categoryLabelColor = {
+  "marketing": {
+    textColor: "#FFB836",
+    bgColor: "#EB85331A",
+  },
+  "design": {
+    textColor: "#56CDAD",
+    bgColor: "#56CDAD1A",
+  },
+  "business": {
+    textColor: "#4640DE",
+    bgColor: "#4640DE1A",
+  },
+  "technology": {
+    textColor: "#FF6550",
+    bgColor: "#FF65501A",
+  },
+}
+
+export const jobList = [
   {
     companyName: "Revolut",
     companyLogo: revolutLogo,
@@ -106,7 +125,7 @@ export const jobsList = [
     position: "Email Marketing",
     type:"full",
     description:"Pitch is looking for a highly motivated and experienced Email Marketing Specialist to join their dynamic marketing team. As an Email Marketing Specialist, you will be responsible for developing and executing effective email marketing campaigns to engage potential target audience, drive customer retention, and contribute to overall business growth",
-    categories: ["Marketing"],
+    categories: ["marketing"],
     applied: 3,
     capacity: 10,
   },
@@ -117,7 +136,7 @@ export const jobsList = [
     position: "Visual Designer",
     type:"full",
     description:"We are searching for a talented Visual Designer to join our creative team. As a Visual Designer, you will be responsible for translating conceptual ideas into visually appealing and effective design solutions. The ideal candidate possesses a strong understanding of design principles, a keen eye for detail, and the ability to create engaging visuals across various mediums.",
-    categories: ["Design"],
+    categories: ["design"],
     applied: 6,
     capacity: 10,
   },

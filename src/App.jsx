@@ -4,6 +4,7 @@ import Hero from "./sections/Hero";
 import Company from "./sections/Company";
 import Category from "./sections/Category";
 import CTA from './sections/CTA';
+import FeaturedJobs from './sections/FeaturedJobs';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
         </section>
         <section className='padding-x lg:py-16'>
           <CTA />
+        </section>
+        <section className='padding-x'>
+          <FeaturedJobs />
         </section>
       </main>
     </div>
