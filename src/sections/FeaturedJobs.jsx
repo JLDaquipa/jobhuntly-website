@@ -3,7 +3,7 @@ import FeaturedJobCard from "../components/featuredJobCard";
 
 const FeaturedJobs = () => {
   return (
-    <div className="max-container pb-10 max-lg:pt-10 lg:pb-0 flex flex-col relative gap-6 lg:gap-0">
+    <div className="max-container pb-10 max-lg:pt-10 lg:pb-16 flex flex-col relative gap-6 lg:gap-0">
       <h3 className="font-clashDisplay text-[32px] lg:text-4xl  font-semibold text-neutral-100 lg:mb-12">
         Featured <span className="text-accent-blue"> jobs</span>
       </h3>
