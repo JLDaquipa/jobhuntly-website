@@ -9,8 +9,8 @@ const JobCard = ({size, cardType, button, icon, label, progress, jobData}) => {
     <div className="flex flex-col lg:flex-row gap-6 font-epilogue p-6 border bg-white border-neutral-20 cursor-pointer hover:shadow-md transition ease-in-out z-10">
       <img className="object-contain w-12 h-12 lg:w-16 lg:h-16 " src={companyLogo} alt="Company logo"/>
       <div className="flex flex-col gap-2">
-        <h5 className='text-lg font-semibold '>{position}</h5>
-        <p className='text-neutral-80 mb-4'>{companyName} • {location}</p>
+        <h5 className='text-lg font-semibold'>{position}</h5>
+        <p className='text-neutral-80'>{companyName} • {location}</p>
         <div className='flex items-center gap-2 flex-wrap mt-auto'>
         {
           label && 
@@ -24,7 +24,7 @@ const JobCard = ({size, cardType, button, icon, label, progress, jobData}) => {
               categories.map( (category, i) => (
                 <CategoryLabel
                   key={i}
-                  type="fill"
+                  type="outline"
                   caption={category}
                   textColor={categoryLabelColor[`${category}`].textColor}
                   bgColor={categoryLabelColor[`${category}`].bgColor}
