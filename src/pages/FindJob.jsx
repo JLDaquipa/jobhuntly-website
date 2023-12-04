@@ -3,7 +3,7 @@ import SearchBar from '../components/SearchBar';
 
 const FindJob = () => {
   return (
-    <section >
+    <section>
       <div className='padding-x bg-neutral-0 font-epilogue py-10 lg:pt-36'>
         <div className='max-container'>
           <h2 className="font-clashDisplay font-semibold text-4xl text-center mb-4">
@@ -14,6 +14,9 @@ const FindJob = () => {
           </h2>
           <p className='text-lg text-neutral-80 text-center mb-6'>Find your next career at companies like HubSpot, Nike, and Dropbox</p>
           <SearchBar />
+          <p className="text-neutral-100 mt-4">
+            Popular : UI Designer, UX Researcher, Android, Admin
+          </p>
         </div>
       </div>
     </section>
