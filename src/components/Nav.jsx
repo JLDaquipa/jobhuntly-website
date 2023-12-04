@@ -5,17 +5,9 @@ import Button from "./Button";
 
 const Nav = () => {
 
-  const nonActiveStyles = {
-    display: "flex",
-    borderBottom: "3px solid rgba(0, 0, 0, 0)",
-    alignItems: "center",
-  }
-
   const activeStyles = {
     color: "#4640DE",
-    borderBottom: "3px solid #4640DE",
-    display: "flex",
-    alignItems: "center",
+    borderBottom: "4px solid #4640DE",
   }
 
   return (
@@ -25,20 +17,22 @@ const Nav = () => {
         <Link to="/">
           <img src={textLogoBlack} alt="Jobhuntly Logo" />
         </Link>
-        <ul className="flex gap-4 font-epilogue max-lg:hidden h-[60px]">
+        <div className="flex gap-4 font-epilogue max-lg:hidden h-[60px]">
           <NavLink 
             to="find"
-            style={({isActive}) => isActive ? activeStyles : nonActiveStyles} 
+            style={({isActive}) => isActive ? activeStyles : null}
+            className="flex items-center font-medium text-neutral-80 border-b-4 border-[rgba(0,0,0,0)] transition-all ease-in-out" 
           >
             Find Jobs
           </NavLink>
           <NavLink 
             to="browse"
-            style={({isActive}) => isActive ? activeStyles : nonActiveStyles} 
+            style={({isActive}) => isActive ? activeStyles : null}
+            className="flex items-center font-medium text-neutral-80 border-b-4 border-[rgba(0,0,0,0)] transition-all ease-in-out"  
           >
             Browse Companies
           </NavLink>
-        </ul>
+        </div>
       </div>
 
       <div className="flex gap-4 max-lg:hidden">
