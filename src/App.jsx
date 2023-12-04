@@ -1,47 +1,21 @@
+import { RouterProvider,createBrowserRouter,createRoutesFromElements,Route } from 'react-router-dom';
 import 'remixicon/fonts/remixicon.css';
-import Nav from "./components/Nav";
-import Hero from "./sections/Hero";
-import Company from "./sections/Company";
-import Category from "./sections/Category";
-import CTA from './sections/CTA';
-import FeaturedJobs from './sections/FeaturedJobs';
-import LatestJob from './sections/LatestJob';
-import Footer from './sections/Footer';
+import MainLayout from './components/layouts/MainLayout';
+import Home from './pages/Home';
+import FindJob from './pages/FindJob';
+import BrowseCompanies from './pages/BrowseCompanies';
+
+const router = createBrowserRouter(createRoutesFromElements(
+  <Route path='/' element={<MainLayout />}>
+    <Route index element={<Home />} />
+    <Route path='/find' element={<FindJob />} />
+    <Route path='/browse' element={<BrowseCompanies />} />
+  </Route>
+))
 
 function App() {
   return (
-    <div>
-      <header className="md:absolute md:z-10 w-full padding-x">
-        <Nav />
-      </header>
-      <main>
-        <section className="bg-neutral-0 lg:cut-bottom-right padding-x relative">
-          <Hero />
-          <div className="w-2/3 bg-hero bg-cover h-full absolute right-0 top-0 z-1">
-          </div>
-        </section>
-        <section className="padding-x">
-          <Company />
-        </section>
-        <section className="padding-x">
-          <Category />
-        </section>
-        <section className='padding-x lg:py-16'>
-          <CTA />
-        </section>
-        <section className='padding-x'>
-          <FeaturedJobs />
-        </section>
-        <section className='padding-x bg-neutral-0 relative'>
-          <LatestJob />
-          <div className="w-2/3 bg-hero bg-cover h-full absolute right-0 top-0 z-1">
-          </div>
-        </section>
-      </main>
-      <footer className='padding-x bg-[#202430] py-10 lg:py-16'>
-        <Footer />
-      </footer>
-    </div>
+    <RouterProvider router={router} />
   )
 }
 

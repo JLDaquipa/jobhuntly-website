@@ -1,16 +1,43 @@
+import { Link, NavLink } from "react-router-dom";
 import { textLogoBlack } from "../assets/images";
 import { hamburger } from "../assets/icons";
 import Button from "./Button";
 
 const Nav = () => {
-  return (
-    <nav className="max-container min-wide:padding-x flex justify-between items-center">
 
-      <div className="flex items-center py-3 gap-12">
-        <img src={textLogoBlack} alt="Jobhuntly Logo" />
-        <ul className="flex gap-4 font-epilogue max-lg:hidden">
-          <li className="cursor-pointer">Find Jobs</li>
-          <li className="cursor-pointer">Browse Companies</li>
+  const nonActiveStyles = {
+    display: "flex",
+    borderBottom: "3px solid rgba(0, 0, 0, 0)",
+    alignItems: "center",
+  }
+
+  const activeStyles = {
+    color: "#4640DE",
+    borderBottom: "3px solid #4640DE",
+    display: "flex",
+    alignItems: "center",
+  }
+
+  return (
+    <nav className="max-container min-wide:padding-x flex justify-between items-center max-lg:py-4">
+
+      <div className="flex items-center gap-12 relative">
+        <Link to="/">
+          <img src={textLogoBlack} alt="Jobhuntly Logo" />
+        </Link>
+        <ul className="flex gap-4 font-epilogue max-lg:hidden h-[60px]">
+          <NavLink 
+            to="find"
+            style={({isActive}) => isActive ? activeStyles : nonActiveStyles} 
+          >
+            Find Jobs
+          </NavLink>
+          <NavLink 
+            to="browse"
+            style={({isActive}) => isActive ? activeStyles : nonActiveStyles} 
+          >
+            Browse Companies
+          </NavLink>
         </ul>
       </div>
 
