@@ -14,7 +14,7 @@ const Hero = () => {
         <p className="font-epilogue text-xl text-neutral-80 text-opacity-70 leading-8 my-5 lg:w-[45%]">
           Great platform for the job seeker that searching for new career heights and passionate about startups.
         </p>
-        <SearchBar />
+        <SearchBar label="Search my job" width="fit" />
         <p className="text-neutral-100 mt-4">
           Popular : UI Designer, UX Researcher, Android, Admin
         </p>
