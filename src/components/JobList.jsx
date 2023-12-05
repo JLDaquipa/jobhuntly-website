@@ -192,6 +192,8 @@ const JobList = () => {
                 <JobCard 
                   key={i}
                   label={true}
+                  button={true}
+                  progress={true}
                   jobData={job}
                 />
               )) 
