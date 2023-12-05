@@ -19,6 +19,32 @@ export default withMT(
         '6xl': ['72px', '82px'],
         '8xl': ['96px', '106px']
       },
+      screens:{
+        'sm': '640px',
+        'max-sm': {'max': '639px'},
+        'min-sm': {'min': '639px'},
+        // => @media (min-width: 640px) { ... }
+
+        'md': '768px',
+        'max-md': {'max': '768px'},
+        'min-md': {'min': '768px'},
+        // => @media (min-width: 768px) { ... }
+
+        'lg': '1024px',
+        'max-lg': {'max': '1024px'},
+        'min-lg': {'min': '1024px'},
+        // => @media (min-width: 1024px) { ... }
+
+        'xl': '1280px',
+        'max-xl': {'max': '1280px'},
+        'min-xl': {'min': '1280px'},
+        // => @media (min-width: 1280px) { ... }
+
+        '2xl': '1536px',
+        'max-2xl': {'max': '1536px'},
+        'min-2xl': {'min': '1536px'},
+        // => @media (min-width: 1536px) { ... }
+      },
       extend: {
         fontFamily: {
           epilogue: ['Epilogue', 'sans-serif'],
