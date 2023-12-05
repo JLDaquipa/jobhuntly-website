@@ -3,8 +3,15 @@ import { search, location } from "../assets/icons";
 import Button from './Button';
 
 const SearchBar = ({label="Search", width="full"}) => {
+  if(width === "full"){
+    width = "md:w-full";
+  }
+  else if(width === "fit"){
+    width = "md:w-fit";
+  }
+
   return (
-    <div className={`flex justify-between items-center gap-4 max-md:gap-3 p-4 lg:6 bg-white shadow-lg md:w-${width} max-md:flex-col`}>
+    <div className={`flex justify-between items-center gap-4 max-md:gap-3 p-4 lg:6 bg-white shadow-lg ${width} max-md:flex-col`}>
       <div className="px-1 flex flex-1 md:mr-4 max-md:w-full">
         <img className="mr-4" src={search} alt="" />
         <div className="py-3 border-b-[1px] w-full">

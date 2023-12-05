@@ -1,45 +1,5 @@
 import { designIcon, salesIcon, marketingIcon, financeIcon, techIcon, engineeringIcon, businessIcon, hrIcon  } from "../assets/icons";
-import {
-  blinkistLogo,
-  canvaLogo,
-  classPassLogo,
-  clayLogo,
-  coinbaseLogo,
-  digitalOceanLogo,
-  discordLogo,
-  divvyLogo,
-  dropboxLogo,
-  foundation,
-  goDaddyLogo,
-  harvardLogo,
-  komodoLogo,
-  krakenLogo,
-  mazeLogo,
-  mediaMonksLogo,
-  netlifyLogo,
-  nomadLogo,
-  nubankLogo,
-  numbrsLogo,
-  packerLogo,
-  pentagramLogo,
-  pitchLogo,
-  prooffeedLogo,
-  revolutLogo,
-  robinhoodLogo,
-  sanofiLogo,
-  squareLogo,
-  stakenetLogo,
-  stripeLogo,
-  terraformLogo,
-  truebillLogo,
-  twitterLogo,
-  udacityLogo,
-  universityOfTorontoLogo,
-  webflowLogo,
-  weTransferLogo,
-  wolffOlinsLogo,
-  zendLogo,
-} from '../assets/images/companies';
+import { blinkistLogo, canvaLogo, classPassLogo, clayLogo, coinbaseLogo, digitalOceanLogo, discordLogo, divvyLogo, dropboxLogo, foundation, goDaddyLogo, harvardLogo, komodoLogo, krakenLogo, mazeLogo, mediaMonksLogo, netlifyLogo, nomadLogo, nubankLogo, numbrsLogo, packerLogo, pentagramLogo, pitchLogo, prooffeedLogo, revolutLogo, robinhoodLogo, sanofiLogo, squareLogo, stakenetLogo, stripeLogo, terraformLogo, truebillLogo, twitterLogo, udacityLogo, universityOfTorontoLogo, webflowLogo, weTransferLogo, wolffOlinsLogo, zendLogo,} from '../assets/images/companies';
 
 export const categories = [
   {
@@ -75,6 +35,15 @@ export const categories = [
     icon: hrIcon,
   },
 ];
+
+export const filters = {
+  employmentType: ["Full Time","Part Time", "Remote", "Internship", "Contract"],
+  categories: ["Design","Sales","Marketing","Business","Human Resource","Finance","Engineering","Technology"],
+  jobLevel: ["Entry Level", "Mid Level","Senior Level","Director","VP or Above"],
+  salaryRange: ["$700 - $1000", "$100 - $1500", "$1500 - $2000", "$3000 or above"],
+  industry: ["Advertising","Business Service", "Blockchain", "Cloud", "Consumer Tech", "Education", "Fintech", "Gaming", "Food & Beverages", "Healthcare", "Hosting", "Media"],
+  companySize: ["1-50", "51-150", "151-250", "250-500", "501-1000","1000 - above"],
+}
 
 export const categoryLabelColor = {
   "marketing": {

@@ -1,10 +1,12 @@
 import { drawline } from '../assets/images';
 import SearchBar from '../components/SearchBar';
+import { Button } from "@material-tailwind/react";
+import JobList from '../components/JobList';
 
 const FindJob = () => {
   return (
-    <section>
-      <div className='padding-x bg-neutral-0 font-epilogue py-10 lg:pt-36'>
+    <section className='font-epilogue'>
+      <div className='padding-x bg-neutral-0 py-10 lg:pt-36 lg:pb-16'>
         <div className='max-container'>
           <h2 className="font-clashDisplay font-semibold text-4xl text-center mb-4">
             Find your <span className="text-accent-blue w-min inline-block whitespace-nowrap">
@@ -18,6 +20,9 @@ const FindJob = () => {
             Popular : UI Designer, UX Researcher, Android, Admin
           </p>
         </div>
+      </div>
+      <div className='py-16 padding-x'>
+            <JobList />
       </div>
     </section>
   )
