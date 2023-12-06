@@ -9,6 +9,7 @@ const JobList = () => {
   const [openCategories, setOpenCategories] = useState(true);
   const [openJobLevel, setOpenJobLevel] = useState(true);
   const [openSalaryRange, setOpenSalaryRange] = useState(true);
+  const [currentPageData, setCurrentPageData] = useState([]);
 
   return (
     <div className="font-epilogue flex justify-between gap-10">
@@ -187,9 +188,9 @@ const JobList = () => {
           <h3 className="font-clashDisplay font-semibold text-[2rem]">All Jobs</h3>         
         </div>
         <div>
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-4 py-8">
             { 
-              jobList.map((job, i) => (
+              currentPageData.map((job, i) => (
                 <JobCard 
                   key={i}
                   label={true}
@@ -201,7 +202,12 @@ const JobList = () => {
             }
           </div>
           <div>
-            <Pagination />
+            <Pagination 
+              currentPageData={setCurrentPageData}
+              dataPerPage={6}
+              getData={jobList}
+              navigation={true}
+            />
           </div>
         </div>
       </div>
