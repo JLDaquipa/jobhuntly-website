@@ -2,6 +2,7 @@ import { Collapse, List, ListItem, ListItemPrefix, Checkbox, Typography } from "
 import { useState } from "react";
 import { filters, jobList } from "../constant";
 import JobCard from "./JobCard";
+import Pagination from "./pagination/Pagination";
 
 const JobList = () => {
   const [openEmploymentType,setOpenEmploymentType] = useState(true);
@@ -198,6 +199,9 @@ const JobList = () => {
                 />
               )) 
             }
+          </div>
+          <div>
+            <Pagination />
           </div>
         </div>
       </div>
