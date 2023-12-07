@@ -21,7 +21,7 @@ const FindJob = () => {
           </p>
         </div>
       </div>
-      <section className='py-16 padding-x'>
+      <section className='py-10 lg:py-16 padding-x'>
         <div className='max-container'>
           <JobList />
         </div>
