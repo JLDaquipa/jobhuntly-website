@@ -2,6 +2,7 @@ import { drawline } from '../assets/images';
 import SearchBar from '../components/SearchBar';
 import { Button } from "@material-tailwind/react";
 import JobList from '../components/JobList';
+import { FilterModal } from "../components/FilterModal";
 
 const FindJob = () => {
   return (
@@ -20,6 +21,9 @@ const FindJob = () => {
             Popular : UI Designer, UX Researcher, Android, Admin
           </p>
         </div>
+      </div>
+      <div className="hidden max-lg:block py-3 border-y-[1px]">
+        <FilterModal />
       </div>
       <section className='py-10 lg:py-16 padding-x'>
         <div className='max-container'>

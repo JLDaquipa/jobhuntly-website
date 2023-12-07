@@ -3,7 +3,6 @@ import { useState } from "react";
 import { filters, jobList } from "../constant";
 import JobCard from "./JobCard";
 import Pagination from "./pagination/Pagination";
-import { FilterDrawer } from "./FilterDrawer";
 
 const JobList = () => {
   const [openEmploymentType,setOpenEmploymentType] = useState(true);
@@ -13,13 +12,7 @@ const JobList = () => {
   const [currentPageData, setCurrentPageData] = useState([]);
 
   return (
-    <>
-      
       <div className="font-epilogue flex max-lg:flex-col justify-between gap-10">
-      <div className="lg:hidden">
-        <FilterDrawer />
-      </div>
-
       {/* Filter Col */}
       <div className="flex flex-col w-[230px] gap-10 max-lg:hidden">
         {/* Type of Employment Filter */}
@@ -218,8 +211,6 @@ const JobList = () => {
         </div>
       </div>
       </div>
-    </>
-    
   )
 }
 

@@ -5,7 +5,7 @@ import Footer from "../../sections/Footer";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="relative">
       <header className="lg:absolute md:z-10 w-full padding-x">
         <Nav />
       </header>
