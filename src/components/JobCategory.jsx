@@ -5,7 +5,7 @@ const JobCategory = ({name}) => {
 
 
   return (
-    <div className="flex max-lg:items-center lg:flex-col flex-1 gap-8 cursor-pointer border border-solid border-neutral-20 p-8 stroke-brand-primary transition ease-in-out hover:stroke-white hover:bg-brand-primary hover:text-white">
+    <div className="flex items-center flex-col max-lg:flex-row flex-1 gap-8 cursor-pointer border border-solid border-neutral-20 p-8 stroke-brand-primary transition ease-in-out hover:stroke-white hover:bg-brand-primary hover:text-white">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         {categoryIcons[`${name}`]}
       </svg>

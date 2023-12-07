@@ -19,7 +19,7 @@ const Home = () => {
         <section className="padding-x">
           <Category />
         </section>
-        <section className='padding-x lg:py-16'>
+        <section className='padding-x py-16 max-lg:py-0'>
           <CTA />
         </section>
         <section className='padding-x'>

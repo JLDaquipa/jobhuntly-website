@@ -4,7 +4,7 @@ import { filters } from "../constant";
 import Button from "./Button";
  
 export function FilterModal() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
  
   const openDrawer = () => setOpen(true);
   const closeDrawer = () => setOpen(false);
