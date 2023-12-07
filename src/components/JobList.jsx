@@ -1,8 +1,9 @@
 import { Collapse, List, ListItem, ListItemPrefix, Checkbox, Typography } from "@material-tailwind/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { filters, jobList } from "../constant";
 import JobCard from "./JobCard";
 import Pagination from "./pagination/Pagination";
+import{ FilterDataAdvanced } from 'filter-data-advanced/dist/FilterDataAdvanced';
 
 const JobList = () => {
   const [openEmploymentType,setOpenEmploymentType] = useState(true);
@@ -10,6 +11,39 @@ const JobList = () => {
   const [openJobLevel, setOpenJobLevel] = useState(true);
   const [openSalaryRange, setOpenSalaryRange] = useState(true);
   const [currentPageData, setCurrentPageData] = useState([]);
+  const [filteredJobData, setFilteredJobData] = useState(jobList);
+  const filter = new FilterDataAdvanced();
+
+  useEffect(()=> {
+    filterJobList();
+  },[])
+
+  const filterJobList = () => {
+    let checkedEmploymentType = [""]
+    let checkedCategories = [""]
+    const typeCheckbox = document.querySelectorAll(`input[type=checkbox][name=type]:checked`);
+    const categoriesCheckbox = document.querySelectorAll(`input[type=checkbox][name=categories]:checked`);
+    
+    if(typeCheckbox.length > 0){
+      checkedEmploymentType = getToFilter(typeCheckbox);
+    }
+
+    if(categoriesCheckbox.length > 0){
+      checkedCategories = getToFilter(categoriesCheckbox);
+    }
+    
+    const firstFilter = filter.filterByKeyAndMultiValues(jobList,"type",checkedEmploymentType);
+    const secFilter = filter.filterByKeyAndMultiValues(firstFilter,"categories",checkedCategories);
+    setFilteredJobData(secFilter);
+  }
+
+  const getToFilter = (filterCheckbox) => {
+    let newArray = []
+    filterCheckbox.forEach(item => {
+      newArray.push(item.value)
+    })
+    return newArray;
+  }
 
   return (
       <div className="font-epilogue flex max-lg:flex-col justify-between gap-10">
@@ -39,6 +73,9 @@ const JobList = () => {
                   <ListItemPrefix>
                     <Checkbox
                       id={item}
+                      name="type"
+                      value={item}
+                      onChange={filterJobList}
                       ripple={false}
                       className="hover:before:opacity-0 p-0 w-5 h-5 rounded-md border-neutral-20 checked:bg-brand-primary checked:border-brand-primary"
                       containerProps={{
@@ -81,6 +118,9 @@ const JobList = () => {
                     <Checkbox
                       id={item}
                       ripple={false}
+                      name="categories"
+                      value={item}
+                      onChange={filterJobList}
                       className="hover:before:opacity-0 p-0 w-5 h-5 rounded-md border-neutral-20 checked:bg-brand-primary checked:border-brand-primary"
                       containerProps={{
                         className: "p-0",
@@ -204,7 +244,7 @@ const JobList = () => {
             <Pagination 
               currentPageData={setCurrentPageData}
               dataPerPage={6}
-              getData={jobList}
+              getData={filteredJobData}
               navigation={true}
             />
           </div>
