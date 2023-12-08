@@ -20,7 +20,7 @@ const JobCard = ({button, icon, label, progress, jobData}) => {
           <div className="flex flex-wrap gap-2">
             <div className="border-r-2 pr-2">
               <div className="flex items-center px-[16px] py-1 text-sm font-semibold rounded-full capitalize text-accent-green bg-[#56CDAD1A]">
-                <span>{type} Time</span>
+                <span>{type}</span>
               </div>
             </div>
             {

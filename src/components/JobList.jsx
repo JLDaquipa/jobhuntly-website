@@ -1,4 +1,4 @@
-import { Collapse, List, ListItem, ListItemPrefix, Checkbox, Typography } from "@material-tailwind/react";
+import { Collapse, List, ListItem, ListItemPrefix, Checkbox, Typography, Spinner } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
 import { filters, jobList } from "../constant";
 import JobCard from "./JobCard";
@@ -10,8 +10,10 @@ const JobList = () => {
   const [openCategories, setOpenCategories] = useState(true);
   const [openJobLevel, setOpenJobLevel] = useState(true);
   const [openSalaryRange, setOpenSalaryRange] = useState(true);
+
   const [currentPageData, setCurrentPageData] = useState([]);
   const [filteredJobData, setFilteredJobData] = useState(jobList);
+  const [isFiltering,setIsFiltering] = useState(false)
   const filter = new FilterDataAdvanced();
 
   useEffect(()=> {
@@ -19,10 +21,15 @@ const JobList = () => {
   },[])
 
   const filterJobList = () => {
-    let checkedEmploymentType = [""]
-    let checkedCategories = [""]
+    let checkedEmploymentType = [""];
+    let checkedCategories = [""];
+    let checkedLevel = [""]
+
+    setIsFiltering(true);
+
     const typeCheckbox = document.querySelectorAll(`input[type=checkbox][name=type]:checked`);
     const categoriesCheckbox = document.querySelectorAll(`input[type=checkbox][name=categories]:checked`);
+    const levelCheckbox = document.querySelectorAll(`input[type=checkbox][name=level]:checked`);
     
     if(typeCheckbox.length > 0){
       checkedEmploymentType = getToFilter(typeCheckbox);
@@ -31,10 +38,19 @@ const JobList = () => {
     if(categoriesCheckbox.length > 0){
       checkedCategories = getToFilter(categoriesCheckbox);
     }
+
+    if(levelCheckbox.length > 0){
+      checkedLevel = getToFilter(levelCheckbox);
+    }
     
     const firstFilter = filter.filterByKeyAndMultiValues(jobList,"type",checkedEmploymentType);
     const secFilter = filter.filterByKeyAndMultiValues(firstFilter,"categories",checkedCategories);
-    setFilteredJobData(secFilter);
+    const thirdFilter = filter.filterByKeyAndMultiValues(secFilter,"level",checkedLevel);
+
+    setTimeout(() => {
+      setFilteredJobData(thirdFilter);
+      setIsFiltering(false);
+    },500)
   }
 
   const getToFilter = (filterCheckbox) => {
@@ -77,6 +93,7 @@ const JobList = () => {
                       value={item}
                       onChange={filterJobList}
                       ripple={false}
+                      disabled={isFiltering}
                       className="hover:before:opacity-0 p-0 w-5 h-5 rounded-md border-neutral-20 checked:bg-brand-primary checked:border-brand-primary"
                       containerProps={{
                         className: "p-0",
@@ -121,6 +138,7 @@ const JobList = () => {
                       name="categories"
                       value={item}
                       onChange={filterJobList}
+                      disabled={isFiltering}
                       className="hover:before:opacity-0 p-0 w-5 h-5 rounded-md border-neutral-20 checked:bg-brand-primary checked:border-brand-primary"
                       containerProps={{
                         className: "p-0",
@@ -162,6 +180,10 @@ const JobList = () => {
                     <Checkbox
                       id={item}
                       ripple={false}
+                      name="level"
+                      value={item}
+                      onChange={filterJobList}
+                      disabled={isFiltering}
                       className="hover:before:opacity-0 p-0 w-5 h-5 rounded-md border-neutral-20 checked:bg-brand-primary checked:border-brand-primary"
                       containerProps={{
                         className: "p-0",
@@ -203,6 +225,7 @@ const JobList = () => {
                     <Checkbox
                       id={item}
                       ripple={false}
+                      disabled={isFiltering}
                       className="hover:before:opacity-0 p-0 w-5 h-5 rounded-md border-neutral-20 checked:bg-brand-primary checked:border-brand-primary"
                       containerProps={{
                         className: "p-0",
@@ -226,29 +249,35 @@ const JobList = () => {
         <div className="mb-8">
           <h3 className="font-clashDisplay font-semibold text-[2rem]">All Jobs</h3>         
         </div>
-        <div>
-          <div className="grid grid-cols-1 gap-4 py-8">
-            { 
-              currentPageData.map((job, i) => (
-                <JobCard 
-                  key={i}
-                  label={true}
-                  button={true}
-                  progress={true}
-                  jobData={job}
-                />
-              )) 
-            }
-          </div>
-          <div>
-            <Pagination 
-              currentPageData={setCurrentPageData}
-              dataPerPage={6}
-              getData={filteredJobData}
-              navigation={true}
-            />
-          </div>
-        </div>
+        {
+          isFiltering 
+          ? <Spinner className="h-10 w-10 mx-auto" />
+          : filteredJobData.length > 0 
+            ? <div className="transition ease-in-out">
+                <div className="grid grid-cols-1 gap-4 mb-8">
+                  { 
+                    currentPageData.map((job, i) => (
+                      <JobCard 
+                        key={i}
+                        label={true}
+                        button={true}
+                        progress={true}
+                        jobData={job}
+                      />
+                    )) 
+                  }
+                </div>
+                <div>
+                  <Pagination 
+                    currentPageData={setCurrentPageData}
+                    dataPerPage={6}
+                    getData={filteredJobData}
+                    navigation={true}
+                  />
+                </div>
+              </div>
+            : <div className="w-full border py-4"><p className="text-center font-semibold text-neutral-60">No Job Found!</p></div>
+        }
       </div>
       </div>
   )
