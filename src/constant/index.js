@@ -137,32 +137,51 @@ export const socialLinks = [
 export const companyList = [
   {
     companyID: 1,
-    name: "Stripe",
-    founded:"2011-07-31",
-    companyLink:"https://stripe.com",
-    companyProfile: "Stripe is a software platform for starting and running internet businesses. Millions of businesses rely on Stripe’s software tools to accept payments, expand globally, and manage their businesses online. Stripe has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Stripe is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
-    profilePic: stripeLogo,
+    name: "Nomad",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://nomad.com",
+    companyProfile: "Nomad is a software platform for starting and running internet businesses. Millions of businesses rely on Nomad’s software tools to accept payments, expand globally, and manage their businesses online. Nomad has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Nomad is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
+    profilePic: nomadLogo,
     officelocations: ["United States", "England", "Japan", "Australia", "China"],
     industry: "Payment Gateway",
     contact:[
       {
         name: "twitter",
-        contactUrl: "twitter.com/stripe",
+        contactUrl: "twitter.com/nomad",
       },
       {
         name: "facebook",
-        contactUrl: "facebook.com/StripeHQ",
+        contactUrl: "facebook.com/NomadHQ",
       },
       {
         name: "linkedIn",
-        contactUrl: "linkedin.com/company/stripe",
+        contactUrl: "linkedin.com/company/nomad",
       },
     ],
     employeeCount: 4000,
     categories:["Marketing", "Design"],
     stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
-    team:[],
-    openJobs:[],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:9}],
     perks:[],
   },
 ]
