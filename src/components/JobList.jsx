@@ -21,16 +21,18 @@ const JobList = () => {
   },[])
 
   const filterJobList = () => {
+    // initial filter group values
     let checkedEmploymentType = [""];
     let checkedCategories = [""];
     let checkedLevel = [""]
 
-    setIsFiltering(true);
+    setIsFiltering(true); // apply loading state
 
     const typeCheckbox = document.querySelectorAll(`input[type=checkbox][name=type]:checked`);
     const categoriesCheckbox = document.querySelectorAll(`input[type=checkbox][name=categories]:checked`);
     const levelCheckbox = document.querySelectorAll(`input[type=checkbox][name=level]:checked`);
     
+    // to get an array of all checked checkbox values in their respective filter group to use in our filter function
     if(typeCheckbox.length > 0){
       checkedEmploymentType = getToFilter(typeCheckbox);
     }
@@ -43,11 +45,12 @@ const JobList = () => {
       checkedLevel = getToFilter(levelCheckbox);
     }
     
+    // Filter logic: Filter first the whole data with the job type group values then filter the returned filtered data to the next filter group value which is the categories and so on
     const firstFilter = filter.filterByKeyAndMultiValues(jobList,"type",checkedEmploymentType);
     const secFilter = filter.filterByKeyAndMultiValues(firstFilter,"categories",checkedCategories);
     const thirdFilter = filter.filterByKeyAndMultiValues(secFilter,"level",checkedLevel);
 
-    setTimeout(() => {
+    setTimeout(() => { // to stimulate loading state
       setFilteredJobData(thirdFilter);
       setIsFiltering(false);
     },500)
@@ -76,7 +79,7 @@ const JobList = () => {
           </div>
           <Collapse open={openEmploymentType}>
             <List className="flex gap-5 p-0 pt-3">
-              {filters.employmentType.map((item) => (
+              {filters.job.employmentType.map((item) => (
                 <ListItem 
                   key={item} 
                   className=" hover:text-neutral-100 p-0 hover:bg-opacity-0 active:bg-opacity-0 focus:bg-opacity-0" 
@@ -121,7 +124,7 @@ const JobList = () => {
           </div>
           <Collapse open={openCategories}>
             <List className="flex gap-5 p-0 pt-3">
-              {filters.categories.map((item) => (
+              {filters.job.categories.map((item) => (
                 <ListItem 
                   key={item} 
                   className=" hover:text-neutral-100 p-0 hover:bg-opacity-0 active:bg-opacity-0 focus:bg-opacity-0" 
@@ -166,7 +169,7 @@ const JobList = () => {
           </div>
           <Collapse open={openJobLevel}>
             <List className="flex gap-5 p-0 pt-3">
-              {filters.jobLevel.map((item) => (
+              {filters.job.jobLevel.map((item) => (
                 <ListItem 
                   key={item} 
                   className=" hover:text-neutral-100 p-0 hover:bg-opacity-0 active:bg-opacity-0 focus:bg-opacity-0" 
@@ -211,7 +214,7 @@ const JobList = () => {
           </div>
           <Collapse open={openSalaryRange}>
             <List className="flex gap-5 p-0 pt-3">
-              {filters.salaryRange.map((item) => (
+              {filters.job.salaryRange.map((item) => (
                 <ListItem 
                   key={item} 
                   className=" hover:text-neutral-100 p-0 hover:bg-opacity-0 active:bg-opacity-0 focus:bg-opacity-0" 

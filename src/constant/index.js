@@ -37,12 +37,19 @@ export const categories = [
 ];
 
 export const filters = {
-  employmentType: ["Full Time","Part Time", "Remote", "Internship", "Contract"],
-  categories: ["Design","Sales","Marketing","Business","Human Resource","Finance","Engineering","Technology"],
-  jobLevel: ["Entry Level", "Mid Level","Senior Level","Director","VP or Above"],
-  salaryRange: ["$700 - $1000", "$100 - $1500", "$1500 - $2000", "$3000 or above"],
-  industry: ["Advertising","Business Service", "Blockchain", "Cloud", "Consumer Tech", "Education", "Fintech", "Gaming", "Food & Beverages", "Healthcare", "Hosting", "Media"],
-  companySize: ["1-50", "51-150", "151-250", "250-500", "501-1000","1000 - above"],
+  job: {
+    employmentType: ["Full Time","Part Time", "Remote", "Internship", "Contract"],
+    categories: ["Design","Sales","Marketing","Business","Human Resource","Finance","Engineering","Technology"],
+    jobLevel: ["Entry Level", "Mid Level","Senior Level","Director","VP or Above"],
+    salaryRange: ["$700 - $1000", "$100 - $1500", "$1500 - $2000", "$3000 or above"],
+    industry: ["Advertising","Business Service", "Blockchain", "Cloud", "Consumer Tech", "Education", "Fintech", "Gaming", "Food & Beverages", "Healthcare", "Hosting", "Media"],
+    companySize: ["1-50", "51-150", "151-250", "250-500", "501-1000","1000 - above"],
+  },
+  company: {
+    industry: ["Advertising", "Business Service", "Blockchain", "Cloud", "Consumer Tech", "Fintech", "Gaming", "Food & Beverage", "Healthcare", "Hosting", "Media"],
+    companySize: ["1 - 50", "51 - 150", "151 - 250", "251 - 500", "501 - 1000", "1000 - 999999"],
+  }
+  
 }
 
 export const categoryLabelColor = {
@@ -159,6 +166,55 @@ export const companyList = [
       },
     ],
     employeeCount: 4000,
+    categories:["Marketing", "Design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:9}],
+    perks:[],
+  },
+  {
+    companyID: 2,
+    name: "Facebook",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://nomad.com",
+    companyProfile: "Nomad is a software platform for starting and running internet businesses. Millions of businesses rely on Nomad’s software tools to accept payments, expand globally, and manage their businesses online. Nomad has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Nomad is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
+    profilePic: nomadLogo,
+    officelocations: ["United States", "England", "Japan", "Australia", "China"],
+    industry: "Payment Gateway",
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/nomad",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/NomadHQ",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/nomad",
+      },
+    ],
+    employeeCount: 300,
     categories:["Marketing", "Design"],
     stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
     team:[
