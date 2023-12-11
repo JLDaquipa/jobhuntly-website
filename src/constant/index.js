@@ -134,8 +134,42 @@ export const socialLinks = [
   },
 ]
 
+export const companyList = [
+  {
+    companyID: 1,
+    name: "Stripe",
+    founded:"2011-07-31",
+    companyLink:"https://stripe.com",
+    companyProfile: "Stripe is a software platform for starting and running internet businesses. Millions of businesses rely on Stripe’s software tools to accept payments, expand globally, and manage their businesses online. Stripe has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Stripe is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
+    profilePic: stripeLogo,
+    officelocations: ["United States", "England", "Japan", "Australia", "China"],
+    industry: "Payment Gateway",
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/stripe",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/StripeHQ",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/stripe",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["Marketing", "Design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[],
+    openJobs:[],
+    perks:[],
+  },
+]
+
 export const jobList = [
   {
+    jobID: 1,
     companyName: "Revolut",
     companyLogo: revolutLogo,
     location: "Madrid, Spain",
@@ -146,8 +180,14 @@ export const jobList = [
     categories: ["marketing", "design"],
     applied: 3,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
+    jobID: 2,
     companyName: "Dropbox",
     companyLogo: dropboxLogo,
     location: "San Fransisco, US",
@@ -160,6 +200,7 @@ export const jobList = [
     capacity: 10,
   },
   {
+    jobID: 3,
     companyName: "Pitch",
     companyLogo: pitchLogo,
     location: "Berlin, Germany",
@@ -172,6 +213,7 @@ export const jobList = [
     capacity: 10,
   },
   {
+    jobID: 4,
     companyName: "Blinkist",
     companyLogo: blinkistLogo,
     location: "Granada, Spain",
@@ -184,6 +226,7 @@ export const jobList = [
     capacity: 10,
   },
   {
+    jobID: 5,
     companyName: "ClassPass",
     companyLogo: classPassLogo,
     location: "Manchester, UK",
@@ -196,6 +239,7 @@ export const jobList = [
     capacity: 10,
   },
   {
+    jobID: 6,
     companyName: "Canva",
     companyLogo: canvaLogo,
     location: "Ontario, Canada",
@@ -208,6 +252,7 @@ export const jobList = [
     capacity: 10,
   },
   {
+    jobID: 7,
     companyName: "GoDaddy",
     companyLogo: goDaddyLogo,
     location: "Marseille, France",
@@ -220,6 +265,7 @@ export const jobList = [
     capacity: 10,
   },
   {
+    jobID: 8,
     companyName: "Twitter",
     companyLogo: twitterLogo,
     location: "San Diego, US",
@@ -232,6 +278,7 @@ export const jobList = [
     capacity: 10,
   },
   {
+    jobID: 9,
     companyName: "Nomad",
     companyLogo: nomadLogo,
     location: "Paris, France",
@@ -242,8 +289,14 @@ export const jobList = [
     categories: ["marketing", "design"],
     applied: 5,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
+    jobID: 10,
     companyName: "Netlify",
     companyLogo: netlifyLogo,
     location: "Paris, France",
@@ -268,6 +321,7 @@ export const jobList = [
     capacity: 10,
   },
   {
+    jobID: 11,
     companyName: "Maze",
     companyLogo: mazeLogo,
     location: "San Fransisco, USA",
@@ -280,6 +334,7 @@ export const jobList = [
     capacity: 10,
   },
   {
+    jobID: 12,
     companyName: "Terraform",
     companyLogo: terraformLogo,
     location: "Hamburg, Germany",
@@ -292,6 +347,7 @@ export const jobList = [
     capacity: 10,
   },
   {
+    jobID: 13,
     companyName: "Udacity",
     companyLogo: udacityLogo,
     location: "Hamburg, Germany",
@@ -304,6 +360,7 @@ export const jobList = [
     capacity: 10,
   },
   {
+    jobID: 14,
     companyName: "Packer",
     companyLogo: packerLogo,
     location: "Lucern, Switzerland",
@@ -316,6 +373,7 @@ export const jobList = [
     capacity: 10,
   },
   {
+    jobID: 15,
     companyName: "Webflow",
     companyLogo: webflowLogo,
     location: "Lucern, Switzerland",
