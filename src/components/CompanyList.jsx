@@ -1,7 +1,7 @@
 import { Collapse, List, ListItem, ListItemPrefix, Checkbox, Typography, Spinner } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
 import { filters, companyList } from "../constant";
-import JobCard from "./JobCard";
+import CompanyCard from "./companyCard";
 import Pagination from "./pagination/Pagination";
 import{ FilterDataAdvanced } from 'filter-data-advanced/dist/FilterDataAdvanced';
 
@@ -160,10 +160,10 @@ const CompanyList = () => {
           ? <Spinner className="h-10 w-10 mx-auto" />
           : filteredCompanyData.length > 0 
             ? <div className="transition ease-in-out">
-                <div className="grid grid-cols-1 gap-4 mb-8">
+                <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4 mb-8">
                   { 
                     currentPageData.map((company) => (
-                      <p key={company.companyID}>{company.name}</p>
+                      <CompanyCard key={company.companyID} companyData={company} />
                     )) 
                   }
                 </div>

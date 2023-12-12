@@ -166,7 +166,7 @@ export const companyList = [
       },
     ],
     employeeCount: 4000,
-    categories:["Marketing", "Design"],
+    categories:["marketing", "design"],
     stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
     team:[
       {
@@ -215,7 +215,7 @@ export const companyList = [
       },
     ],
     employeeCount: 300,
-    categories:["Marketing", "Design"],
+    categories:["marketing", "design"],
     stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
     team:[
       {
