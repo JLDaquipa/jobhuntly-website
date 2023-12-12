@@ -9,7 +9,7 @@ const FeaturedJobCard = ({jobData}) => {
     <div className=' max-lg:min-w-[286px] flex flex-col gap-4 font-epilogue p-6 border border-neutral-20 cursor-pointer hover:shadow-md transition ease-in-out'>
       <div className='flex justify-between gap-4'>
         <img className="object-contain" src={companyLogo} alt="Company logo" width={48} height={48}/>
-        <span className='border border-solid border-brand-primary py-1 px-3 capitalize text-brand-primary flex items-center justify-center h-max'>{type} time</span>
+        <span className='border border-solid border-brand-primary py-1 px-3 capitalize text-brand-primary flex items-center justify-center h-max'>{type}</span>
       </div>
       <div>
         <h5 className='text-lg font-semibold '>{position}</h5>
