@@ -69,6 +69,37 @@ export const categoryLabelColor = {
     textColor: "#FF6550",
     bgColor: "#FF65501A",
   },
+  "blockchain": {
+    textColor: "#FFB836",
+    bgColor: "#EB85331A",
+  },
+  "payment gateway": {
+    textColor: "#4640DE",
+    bgColor: "#4640DE1A",
+  },
+}
+
+export const industryLabelColor = {
+  "blockchain": {
+    textColor: "#FFB836",
+    bgColor: "#EB85331A",
+  },
+  "payment gateway": {
+    textColor: "#4640DE",
+    bgColor: "#4640DE1A",
+  },
+  "business service": {
+    textColor: "#56CDAD",
+    bgColor: "#56CDAD1A",
+  },
+  "cloud": {
+    textColor: "#26A4FF",
+    bgColor: "#26A4FF1A",
+  },
+  "media": {
+    textColor: "#FF6550",
+    bgColor: "#FF65501A",
+  }
 }
 
 export const aboutLinks = [
@@ -150,7 +181,7 @@ export const companyList = [
     companyProfile: "Nomad is a software platform for starting and running internet businesses. Millions of businesses rely on Nomad’s software tools to accept payments, expand globally, and manage their businesses online. Nomad has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Nomad is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
     profilePic: nomadLogo,
     officelocations: ["United States", "England", "Japan", "Australia", "China"],
-    industry: "Payment Gateway",
+    industry: ["business service"],
     contact:[
       {
         name: "twitter",
@@ -193,13 +224,13 @@ export const companyList = [
   },
   {
     companyID: 2,
-    name: "Facebook",
+    name: "Stripe",
     founded:"2011-07-31", // YYYY-MM-DD
-    companyLink:"https://nomad.com",
-    companyProfile: "Nomad is a software platform for starting and running internet businesses. Millions of businesses rely on Nomad’s software tools to accept payments, expand globally, and manage their businesses online. Nomad has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Nomad is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
-    profilePic: nomadLogo,
-    officelocations: ["United States", "England", "Japan", "Australia", "China"],
-    industry: "Payment Gateway",
+    companyLink:"https://stripe.com",
+    companyProfile: "Stripe is a software platform for starting and running internet businesses. Millions of businesses rely on Stripe’s software tools to accept payments, expand globally, and manage their businesses online. Stripe has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Stripe is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
+    profilePic: stripeLogo,
+    officeLocations: ["United States", "England", "Japan", "Australia", "China"],
+    industry: ["payment gateway"],
     contact:[
       {
         name: "twitter",
@@ -215,6 +246,203 @@ export const companyList = [
       },
     ],
     employeeCount: 300,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+      
+    ],
+    openJobs:[{jobID:9}],
+    perks:[],
+  },
+  {
+    companyID: 3,
+    name: "Square",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://square.com",
+    companyProfile: "Square builds common business tools in unconventional ways so more people can start, run, and grow their businesses.",
+    profilePic: squareLogo,
+    officelocations: ["United States", "England", "Japan", "Australia", "China"],
+    industry: ["business service"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/nomad",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/NomadHQ",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/nomad",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:9}],
+    perks:[],
+  },
+  {
+    companyID: 4,
+    name: "Revolut",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://revolut.com",
+    companyProfile: "Revolut is a financial technology company that offers a range of digital banking services and financial products. Founded in 2015, the London-based company has gained widespread popularity for its innovative approach to banking, providing users with a mobile app that allows them to manage their finances, make international money transfers at competitive exchange rates, and spend money abroad with minimal fees. In addition to traditional banking features, Revolut also offers cryptocurrency trading, budgeting tools, and a variety of other financial services. The platform has rapidly expanded its user base globally and is known for its user-friendly interface and commitment to disrupting traditional banking norms.",
+    profilePic: revolutLogo,
+    officelocations: ["United States", "England", "Japan", "Australia", "China"],
+    industry: ["payment gateway"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/nomad",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/NomadHQ",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/nomad",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:9}],
+    perks:[],
+  },
+  {
+    companyID: 5,
+    name: "Dropbox",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://dropbox.com",
+    companyProfile: "Dropbox is a cloud-based file hosting and collaboration platform that enables users to store and share files seamlessly across devices. Founded in 2007, Dropbox simplifies file management by allowing users to upload documents, photos, and other content to the cloud, making them accessible from anywhere with an internet connection. The platform also facilitates easy collaboration through shared folders, file syncing, and collaboration tools, making it a popular choice for individuals and businesses alike. Dropbox's user-friendly interface and emphasis on synchronization and collaboration have contributed to its widespread adoption as a reliable and convenient solution for file storage and sharing in both personal and professional settings.",
+    profilePic: dropboxLogo,
+    officelocations: ["United States", "England", "Japan", "Australia", "China"],
+    industry: ["cloud"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/nomad",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/NomadHQ",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/nomad",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:9}],
+    perks:[],
+  },
+  {
+    companyID: 6,
+    name: "Pitch",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://pitch.com",
+    companyProfile: "Pitch is a collaborative presentation software designed to enhance the process of creating, sharing, and collaborating on presentations. Launched in 2020, the Berlin-based company aims to redefine the way teams work on presentations, offering a platform that combines real-time collaboration, beautiful design, and seamless communication. Pitch allows users to create visually appealing and engaging presentations with a variety of templates and design elements. Its emphasis on collaboration enables team members to work together on presentations in real-time, providing a more dynamic and efficient approach to the creation and refinement of slide decks.",
+    profilePic: pitchLogo,
+    officelocations: ["United States", "England", "Japan", "Australia", "China"],
+    industry: ["media"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/nomad",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/NomadHQ",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/nomad",
+      },
+    ],
+    employeeCount: 4000,
     categories:["marketing", "design"],
     stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
     team:[
