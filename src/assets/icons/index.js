@@ -10,6 +10,14 @@ import marketingIcon from './Marketing.svg';
 import salesIcon from './Sales.svg';
 import techIcon from './Tech.svg';
 import arrowRight from './arrow_right.svg';
+import coffeeIcon from './coffee.svg';
+import commuterIcon from './commuter.svg';
+import developmentIcon from './development.svg';
+import giveIcon from './give.svg';
+import healthcareIcon from './healthcare.svg';
+import summitIcon from './summit.svg';
+import vacationIcon from './vacation.svg';
+
 
 export { 
   hamburger, 
@@ -23,5 +31,12 @@ export {
   marketingIcon,
   salesIcon,
   techIcon,
-  arrowRight
+  arrowRight,
+  coffeeIcon,
+  commuterIcon,
+  developmentIcon,
+  giveIcon,
+  healthcareIcon,
+  summitIcon,
+  vacationIcon,
 };

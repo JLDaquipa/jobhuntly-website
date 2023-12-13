@@ -1,4 +1,4 @@
-import { designIcon, salesIcon, marketingIcon, financeIcon, techIcon, engineeringIcon, businessIcon, hrIcon  } from "../assets/icons";
+import { designIcon, salesIcon, marketingIcon, financeIcon, techIcon, engineeringIcon, businessIcon, hrIcon, coffeeIcon, commuterIcon, developmentIcon, giveIcon, healthcareIcon, summitIcon, vacationIcon} from "../assets/icons";
 import { blinkistLogo, canvaLogo, classPassLogo, clayLogo, coinbaseLogo, digitalOceanLogo, discordLogo, divvyLogo, dropboxLogo, foundation, goDaddyLogo, harvardLogo, komodoLogo, krakenLogo, mazeLogo, mediaMonksLogo, netlifyLogo, nomadLogo, nubankLogo, numbrsLogo, packerLogo, pentagramLogo, pitchLogo, prooffeedLogo, revolutLogo, robinhoodLogo, sanofiLogo, squareLogo, stakenetLogo, stripeLogo, terraformLogo, truebillLogo, twitterLogo, udacityLogo, universityOfTorontoLogo, webflowLogo, weTransferLogo, wolffOlinsLogo, zendLogo,} from '../assets/images/companies';
 
 export const categories = [
@@ -35,6 +35,44 @@ export const categories = [
     icon: hrIcon,
   },
 ];
+
+export const perks = [
+  {
+    name: "Full Healthcare",
+    text: "We believe in thriving communities and that starts with our team being happy and healthy.",
+    icon: healthcareIcon,
+  },
+  {
+    name: "Unlimited Vacation",
+    text: "We believe you should have a flexible schedule that makes space for family, wellness, and fun.",
+    icon: vacationIcon,
+  },
+  {
+    name: "Skill Development",
+    text: "We believe in always learning and leveling up our skills. Whether it's a conference or online course.",
+    icon: developmentIcon,
+  },{
+    name: "Team Summits",
+    text: "Every 6 months we have a full team summit where we have fun, reflect, and plan for the upcoming quarter.",
+    icon: summitIcon,
+  },
+  {
+    name: "Remote Working",
+    text: "You know how you perform your best. Work from home, coffee shop or anywhere when you feel like it.",
+    icon: coffeeIcon,
+  },
+  {
+    name: "Commuter Benefits",
+    text: "We’re grateful for all the time and energy each team member puts into getting to work every day.",
+    icon: commuterIcon,
+  },
+  {
+    name: "We give back",
+    text: "We anonymously match any donation our employees make (up to $/€ 600) so they can support the organizations they care about most—times two. ",
+    icon: giveIcon,
+  },
+
+]
 
 export const filters = {
   job: {

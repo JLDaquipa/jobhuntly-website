@@ -40,7 +40,7 @@ const JobCard = ({button, icon, label, progress, jobData}) => {
       </div>
       {
         button && 
-        <div className="flex flex-col ml-auto items-center justify-between w-full lg:w-fit gap-4">
+        <div className="flex flex-col ml-auto items-center justify-between w-full min-w-[10rem] lg:w-fit gap-4">
           <Button label="Apply" action={()=>{}} style="filled" className="min-md:w-full lg:py-4" />
           {
             progress &&

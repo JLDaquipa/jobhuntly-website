@@ -21,6 +21,10 @@
     margin: 0 auto;
   }
 
+  .grid-auto-columns {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  }
+
   .cut-bottom-right {
       clip-path: polygon(0 0,100% 0,100% calc(100% - 200px),calc(100% - 400px) 100%,0 100%);
   }
