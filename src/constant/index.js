@@ -501,6 +501,11 @@ export const jobList = [
     categories: ["design", "business"],
     applied: 6,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
     jobID: 3,
@@ -514,6 +519,11 @@ export const jobList = [
     categories: ["marketing"],
     applied: 3,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
     jobID: 4,
@@ -527,6 +537,11 @@ export const jobList = [
     categories: ["design"],
     applied: 6,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
     jobID: 5,
@@ -540,6 +555,11 @@ export const jobList = [
     categories: ["marketing", "design"],
     applied: 2,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
     jobID: 6,
@@ -553,6 +573,11 @@ export const jobList = [
     categories: ["design", "business"],
     applied: 4,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
     jobID: 7,
@@ -566,6 +591,11 @@ export const jobList = [
     categories: ["marketing"],
     applied: 2,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
     jobID: 8,
@@ -579,6 +609,11 @@ export const jobList = [
     categories: ["technology"],
     applied: 6,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
     jobID: 9,
@@ -610,6 +645,11 @@ export const jobList = [
     categories: ["marketing", "design"],
     applied: 3,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
     companyName: "Dropbox",
@@ -622,6 +662,11 @@ export const jobList = [
     categories: ["marketing", "design"],
     applied: 0,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
     jobID: 11,
@@ -635,6 +680,11 @@ export const jobList = [
     categories: ["marketing", "design"],
     applied: 2,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
     jobID: 12,
@@ -648,6 +698,11 @@ export const jobList = [
     categories: ["marketing", "design"],
     applied: 3,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
     jobID: 13,
@@ -661,6 +716,11 @@ export const jobList = [
     categories: ["marketing", "design"],
     applied: 4,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
     jobID: 14,
@@ -674,6 +734,11 @@ export const jobList = [
     categories: ["marketing", "design"],
     applied: 5,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
   {
     jobID: 15,
@@ -687,5 +752,10 @@ export const jobList = [
     categories: ["marketing", "design"],
     applied: 3,
     capacity: 10,
+    jobPosted: "2023-09-15", // YYYY-MM-DD
+    applyBefore: "2023-10-15",
+    responsibilities: ["Community engagement to ensure that is supported and actively represented online","Focus on social media content development and publication","Marketing and strategy support","Stay on top of trends on social media platforms, and suggest content ideas to the team","Engage with online communities"],
+    requiredSkills: ["Project Management", "Copywriting", "English", "Social Media Marketing", "Copy Editing"],
+    softSkills: ["Fluent in English", "Project Management Skills", "Copy editing skills"],
   },
 ];

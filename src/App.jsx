@@ -4,12 +4,14 @@ import MainLayout from './components/layouts/MainLayout';
 import Home from './pages/Home';
 import FindJob from './pages/FindJob';
 import BrowseCompanies from './pages/BrowseCompanies';
+import JobDetails from './pages/jobDetails';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<MainLayout />}>
     <Route index element={<Home />} />
-    <Route path='/find' element={<FindJob />} />
-    <Route path='/browse' element={<BrowseCompanies />} />
+    <Route path='/jobs' element={<FindJob />} />
+    <Route path='/jobs/1' element={<JobDetails />} />
+    <Route path='/companies' element={<BrowseCompanies />} />
   </Route>
 ))
 

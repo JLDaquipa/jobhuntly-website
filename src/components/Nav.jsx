@@ -19,14 +19,14 @@ const Nav = () => {
         </Link>
         <div className="flex gap-4 font-epilogue max-lg:hidden h-[60px]">
           <NavLink 
-            to="find"
+            to="jobs"
             style={({isActive}) => isActive ? activeStyles : null}
             className="flex items-center font-medium text-neutral-80 border-b-4 border-[rgba(0,0,0,0)] transition-all ease-in-out" 
           >
             Find Jobs
           </NavLink>
           <NavLink 
-            to="browse"
+            to="companies"
             style={({isActive}) => isActive ? activeStyles : null}
             className="flex items-center font-medium text-neutral-80 border-b-4 border-[rgba(0,0,0,0)] transition-all ease-in-out"  
           >
