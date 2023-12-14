@@ -4,7 +4,7 @@ const PerksAndBenefits = () => {
   return (
     <div>
       <div className="mb-8">
-        <h3 className="font-clashDisplay font-semibold text-[2rem] mb-2">Perks & Benefits</h3>
+        <h3 className="font-clashDisplay font-semibold text-2xl md:text-[2rem] mb-2">Perks & Benefits</h3>
         <p className="text-neutral-80">This job comes with several perks and benefits</p>
       </div>
       <div className="grid grid-auto-columns gap-8">

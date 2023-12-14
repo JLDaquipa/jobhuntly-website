@@ -218,6 +218,7 @@ export const companyList = [
     companyLink:"https://nomad.com",
     companyProfile: "Nomad is a software platform for starting and running internet businesses. Millions of businesses rely on Nomad’s software tools to accept payments, expand globally, and manage their businesses online. Nomad has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Nomad is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
     profilePic: nomadLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
     officelocations: ["United States", "England", "Japan", "Australia", "China"],
     industry: ["business service"],
     contact:[
@@ -267,6 +268,7 @@ export const companyList = [
     companyLink:"https://stripe.com",
     companyProfile: "Stripe is a software platform for starting and running internet businesses. Millions of businesses rely on Stripe’s software tools to accept payments, expand globally, and manage their businesses online. Stripe has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Stripe is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
     profilePic: stripeLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
     officeLocations: ["United States", "England", "Japan", "Australia", "China"],
     industry: ["payment gateway"],
     contact:[
@@ -317,6 +319,7 @@ export const companyList = [
     companyLink:"https://square.com",
     companyProfile: "Square builds common business tools in unconventional ways so more people can start, run, and grow their businesses.",
     profilePic: squareLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
     officelocations: ["United States", "England", "Japan", "Australia", "China"],
     industry: ["business service"],
     contact:[
@@ -366,6 +369,7 @@ export const companyList = [
     companyLink:"https://revolut.com",
     companyProfile: "Revolut is a financial technology company that offers a range of digital banking services and financial products. Founded in 2015, the London-based company has gained widespread popularity for its innovative approach to banking, providing users with a mobile app that allows them to manage their finances, make international money transfers at competitive exchange rates, and spend money abroad with minimal fees. In addition to traditional banking features, Revolut also offers cryptocurrency trading, budgeting tools, and a variety of other financial services. The platform has rapidly expanded its user base globally and is known for its user-friendly interface and commitment to disrupting traditional banking norms.",
     profilePic: revolutLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
     officelocations: ["United States", "England", "Japan", "Australia", "China"],
     industry: ["payment gateway"],
     contact:[
@@ -415,6 +419,7 @@ export const companyList = [
     companyLink:"https://dropbox.com",
     companyProfile: "Dropbox is a cloud-based file hosting and collaboration platform that enables users to store and share files seamlessly across devices. Founded in 2007, Dropbox simplifies file management by allowing users to upload documents, photos, and other content to the cloud, making them accessible from anywhere with an internet connection. The platform also facilitates easy collaboration through shared folders, file syncing, and collaboration tools, making it a popular choice for individuals and businesses alike. Dropbox's user-friendly interface and emphasis on synchronization and collaboration have contributed to its widespread adoption as a reliable and convenient solution for file storage and sharing in both personal and professional settings.",
     profilePic: dropboxLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
     officelocations: ["United States", "England", "Japan", "Australia", "China"],
     industry: ["cloud"],
     contact:[
@@ -464,6 +469,7 @@ export const companyList = [
     companyLink:"https://pitch.com",
     companyProfile: "Pitch is a collaborative presentation software designed to enhance the process of creating, sharing, and collaborating on presentations. Launched in 2020, the Berlin-based company aims to redefine the way teams work on presentations, offering a platform that combines real-time collaboration, beautiful design, and seamless communication. Pitch allows users to create visually appealing and engaging presentations with a variety of templates and design elements. Its emphasis on collaboration enables team members to work together on presentations in real-time, providing a more dynamic and efficient approach to the creation and refinement of slide decks.",
     profilePic: pitchLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
     officelocations: ["United States", "England", "Japan", "Australia", "China"],
     industry: ["media"],
     contact:[
