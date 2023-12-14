@@ -17,6 +17,11 @@ import giveIcon from './give.svg';
 import healthcareIcon from './healthcare.svg';
 import summitIcon from './summit.svg';
 import vacationIcon from './vacation.svg';
+import fireIcon from './fire.svg';
+import groupIcon from './group.svg';
+import locationBlueIcon from './location_blue.svg';
+import industryIcon from './industry.svg';
+
 
 
 export { 
@@ -39,4 +44,8 @@ export {
   healthcareIcon,
   summitIcon,
   vacationIcon,
+  fireIcon,
+  groupIcon,
+  locationBlueIcon,
+  industryIcon,
 };
