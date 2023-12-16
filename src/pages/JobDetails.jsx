@@ -6,11 +6,12 @@ import { Progress } from "@material-tailwind/react";
 import CategoryLabel from "../components/CategoryLabel";
 import { categoryLabelColor } from "../constant";
 import PerksAndBenefits from "../components/PerksAndBenefits";
+import { Link, useParams } from "react-router-dom";
 
 const JobDetails = () => {
-  const job = jobList.find((job) => job.jobID === 1);
-  const company = companyList.find((company) => company.openJobs.some((i) => i.jobID === 9));
-  console.log(company.profilePic)
+  const params = useParams();
+  const job = jobList.find((job) => job.jobID == params.jobID);
+  const company = companyList.find((company) => company.companyID == job.companyID);
   const progressPercentage = (job.applied / job.capacity) * 100;
 
   return (
@@ -19,13 +20,15 @@ const JobDetails = () => {
       <div className='padding-x bg-neutral-0 pt-[3.75rem]'>
         <div className='max-container py-10'>
           <Breadcrumbs className="bg-transparent mb-10 p-0">
-            <a href="#" className="opacity-60">
+            <Link to="/" className="opacity-60">
               Home
-            </a>
-            <a href="#" className="opacity-60">
-              Company
-            </a>
-            <a href="#">Job ID</a>
+            </Link>
+            <Link to={`../companies/${job.companyID}`} className="opacity-60">
+              {company.name}
+            </Link>
+            <Link to={`../jobs/${job.jobID}`}>
+              {job.position}
+            </Link>
           </Breadcrumbs>
           <JobCard
             large={true} 

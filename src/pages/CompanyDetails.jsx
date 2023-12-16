@@ -4,22 +4,24 @@ import { fireIcon,groupIcon,locationBlueIcon,industryIcon } from "../assets/icon
 import PerksAndBenefits from "../components/PerksAndBenefits";
 import { techStack } from "../constant";
 import { useCountries } from "use-react-countries";
+import { Link, useParams } from "react-router-dom";
 
 const CompanyDetails = () => {
   const { countries } = useCountries();
-  const company = companyList.find((company) => company.companyID === 1);
+  const params = useParams()
+  const company = companyList.find((company) => company.companyID == params.companyID);
 
   return (
     <section className="font-epilogue">
       <div className='padding-x bg-neutral-0 lg:pt-[3.75rem]'>
         <div className='max-container py-10'>
           <Breadcrumbs className="bg-transparent mb-4 lg:mb-10 p-0">
-            <a href="#" className="opacity-60">
+            <Link to="../" className="opacity-60">
               Home
-            </a>
-            <a href="#" className="opacity-60">
+            </Link>
+            <Link to={`../companies/${company.companyID}`} className="opacity-60">
               {company.name}
-            </a>
+            </Link>
           </Breadcrumbs>
           {/* ---------------- */}
           <div className="flex flex-col xl:flex-row lg:gap-6">

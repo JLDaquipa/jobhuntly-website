@@ -4,6 +4,7 @@ import { filters, companyList } from "../constant";
 import CompanyCard from "./companyCard";
 import Pagination from "./pagination/Pagination";
 import{ FilterDataAdvanced } from 'filter-data-advanced/dist/FilterDataAdvanced';
+import { Link } from "react-router-dom";
 
 const CompanyList = () => {
   const [openIndustry,setOpenIndustry] = useState(true);
@@ -163,7 +164,9 @@ const CompanyList = () => {
                 <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4 mb-8">
                   { 
                     currentPageData.map((company) => (
-                      <CompanyCard key={company.companyID} companyData={company} />
+                      <Link to={`${company.companyID}`} key={company.companyID}>
+                        <CompanyCard  companyData={company} />
+                      </Link>
                     )) 
                   }
                 </div>

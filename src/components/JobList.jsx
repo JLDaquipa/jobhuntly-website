@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { filters, jobList } from "../constant";
 import JobCard from "./JobCard";
 import Pagination from "./pagination/Pagination";
-import{ FilterDataAdvanced } from 'filter-data-advanced/dist/FilterDataAdvanced';
+import { FilterDataAdvanced } from 'filter-data-advanced/dist/FilterDataAdvanced';
+import { Link } from "react-router-dom";
 
 const JobList = () => {
   const [openEmploymentType,setOpenEmploymentType] = useState(true);
@@ -260,13 +261,14 @@ const JobList = () => {
                 <div className="grid grid-cols-1 gap-4 mb-8">
                   { 
                     currentPageData.map((job, i) => (
-                      <JobCard 
-                        key={i}
-                        label={true}
-                        button={true}
-                        progress={true}
-                        jobData={job}
-                      />
+                      <Link to={`../jobs/${job.jobID}`} key={i}>
+                        <JobCard 
+                          label={true}
+                          button={true}
+                          progress={true}
+                          jobData={job}
+                          />
+                      </Link>
                     )) 
                   }
                 </div>
