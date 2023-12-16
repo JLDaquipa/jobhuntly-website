@@ -1,5 +1,6 @@
 import { designIcon, salesIcon, marketingIcon, financeIcon, techIcon, engineeringIcon, businessIcon, hrIcon, coffeeIcon, commuterIcon, developmentIcon, giveIcon, healthcareIcon, summitIcon, vacationIcon} from "../assets/icons";
 import { blinkistLogo, canvaLogo, classPassLogo, clayLogo, coinbaseLogo, digitalOceanLogo, discordLogo, divvyLogo, dropboxLogo, foundation, goDaddyLogo, harvardLogo, komodoLogo, krakenLogo, mazeLogo, mediaMonksLogo, netlifyLogo, nomadLogo, nubankLogo, numbrsLogo, packerLogo, pentagramLogo, pitchLogo, prooffeedLogo, revolutLogo, robinhoodLogo, sanofiLogo, squareLogo, stakenetLogo, stripeLogo, terraformLogo, truebillLogo, twitterLogo, udacityLogo, universityOfTorontoLogo, webflowLogo, weTransferLogo, wolffOlinsLogo, zendLogo,} from '../assets/images/companies';
+import { css3Logo,framerLogo,html5Logo,javaScriptLogo,mixpanelLogo,rubyLogo, } from "../assets/images/techImages";
 
 export const categories = [
   {
@@ -210,6 +211,27 @@ export const socialLinks = [
   },
 ]
 
+export const techStack = {
+  "HTML 5": {
+    image: html5Logo
+  },
+  "CSS 3": {
+    image: css3Logo
+  },
+  "JavaScript": {
+    image: javaScriptLogo
+  },
+  "Ruby": {
+    image: rubyLogo
+  },
+  "Mixpanel": {
+    image: mixpanelLogo
+  },
+  "Framer": {
+    image: framerLogo
+  },
+}
+
 export const companyList = [
   {
     companyID: 1,
@@ -219,7 +241,7 @@ export const companyList = [
     companyProfile: "Nomad is a software platform for starting and running internet businesses. Millions of businesses rely on Nomad’s software tools to accept payments, expand globally, and manage their businesses online. Nomad has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Nomad is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
     profilePic: nomadLogo,
     companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
-    officeLocations: ["United States", "England", "Japan", "Australia", "China"],
+    officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["business service"],
     contact:[
       {
@@ -237,7 +259,7 @@ export const companyList = [
     ],
     employeeCount: 4000,
     categories:["marketing", "design"],
-    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    stack:["HTML 5", "CSS 3", "JavaScript", "Ruby", "Mixpanel", "Framer"],
     team:[
       {
         name: "Célestin Gardinier",
