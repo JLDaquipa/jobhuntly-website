@@ -24,35 +24,35 @@ const Nav = () => {
           <Link to="/">
             <img src={textLogoBlack} alt="Jobhuntly Logo" />
           </Link>
-          <div className="flex gap-4 font-epilogue max-md:hidden h-[60px]">
+          <div className="lg:flex gap-4 font-epilogue hidden h-[60px]">
             <NavLink 
               to="jobs"
               style={({isActive}) => isActive ? activeStyles : null}
-              className="flex items-center font-medium text-neutral-80 border-b-4 border-[rgba(0,0,0,0)] transition-all ease-in-out" 
+              className="flex items-center font-medium text-neutral-80 border-b-4 border-[rgba(0,0,0,0)] hover:text-neutral-100 transition-all ease-in-out" 
             >
               Find Jobs
             </NavLink>
             <NavLink 
               to="companies"
               style={({isActive}) => isActive ? activeStyles : null}
-              className="flex items-center font-medium text-neutral-80 border-b-4 border-[rgba(0,0,0,0)] transition-all ease-in-out"  
+              className="flex items-center font-medium text-neutral-80 border-b-4 border-[rgba(0,0,0,0)] hover:text-neutral-100 transition-all ease-in-out"  
             >
               Browse Companies
             </NavLink>
           </div>
         </div>
 
-        <div className="flex gap-4 max-md:hidden">
+        <div className="lg:flex gap-4 hidden">
           <Button label="Login" action={()=>{}}/>
           <div className="border-l-[1px] border-solid border-primary-blue"></div>
           <Button label="Sign Up" action={()=>{}} style="filled"/>
         </div>
 
-        <div className="hidden max-md:block border-solid border-[1px] rounded-full p-2 border-neutral-20 cursor-pointer" onClick={openDrawer}>
+        <div className="lg:hidden block border-solid border-[1px] rounded-full p-2 border-neutral-20 cursor-pointer" onClick={openDrawer}>
           <img src={hamburger} />
         </div>
 
-        <Drawer open={open} onClose={closeDrawer} placement="right" className="p-4">
+        <Drawer open={open} onClose={closeDrawer} placement="right" className="p-4 lg:hidden">
           <MenuBar close={closeDrawer}/>
         </Drawer>
       </nav>
