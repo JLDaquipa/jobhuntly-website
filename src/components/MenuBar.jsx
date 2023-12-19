@@ -1,8 +1,16 @@
 /* eslint-disable react/prop-types */
 import { Card, List, ListItem, ListItemPrefix, IconButton } from "@material-tailwind/react";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "./Button";
 
 const MenuBar = ({close}) => {
+  const navigate = useNavigate();
+
+  const handleClick = (path) => {
+    navigate(path);
+    close();
+  }
+
   return (
     <Card className="w-full shadow-none p-0">
       <IconButton variant="text" color="blue-gray" onClick={close}>
@@ -22,19 +30,19 @@ const MenuBar = ({close}) => {
             </svg>
         </IconButton>
       <List>
-        <ListItem className="font-clashDisplay font-medium" ripple={false}>
+        <ListItem className="font-clashDisplay font-medium" ripple={false} onClick={() => handleClick("/")}>
           <ListItemPrefix>
             <i className="ri-home-4-line text-2xl"></i>
           </ListItemPrefix>
           Home
         </ListItem>
-        <ListItem className="font-clashDisplay font-medium" ripple={false}>
+        <ListItem className="font-clashDisplay font-medium" ripple={false} onClick={() => handleClick("jobs")}>
           <ListItemPrefix>
             <i className="ri-briefcase-2-line text-2xl"></i>
           </ListItemPrefix>
           Find Jobs
         </ListItem>
-        <ListItem className="font-clashDisplay font-medium" ripple={false}>
+        <ListItem className="font-clashDisplay font-medium" ripple={false} onClick={() => handleClick("companies")}>
           <ListItemPrefix>
             <i className="ri-building-2-line text-2xl"></i>
           </ListItemPrefix>
