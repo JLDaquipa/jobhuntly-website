@@ -4,13 +4,13 @@ import { categoryLabelColor } from "../constant";
 import { Progress } from "@material-tailwind/react";
 import Button from "./Button";
 
-const JobCard = ({large, button, icon, label, progress, jobData}) => {
+const JobCard = ({large, button, label, progress, jobData}) => {
   const {companyName, companyLogo, position, location, type, categories, applied, capacity } = jobData;
   const progressPercentage = (applied / capacity) * 100;
 
   return (
     <div className="flex flex-col lg:flex-row gap-6 font-epilogue p-6 border bg-white border-neutral-20 cursor-pointer hover:shadow-md transition ease-in-out z-10">
-      <img className="object-contain w-12 h-12 lg:w-auto lg:h-full " src={companyLogo} alt="Company logo"/>
+      <img className="object-contain w-12 h-12 lg:w-auto" src={companyLogo} alt="Company logo"/>
       <div className="flex flex-col gap-2">
         <h5 className={`${large ? "text-[2rem] font-clashDisplay":"text-lg"} font-semibold`}>{position}</h5>
         <p className='text-neutral-80'>{companyName} • {location}</p>

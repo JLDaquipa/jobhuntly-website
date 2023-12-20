@@ -1,5 +1,4 @@
 import { Breadcrumbs } from "@material-tailwind/react";
-import JobCard from "../components/JobCard";
 import { jobList } from "../constant";
 import { companyList } from "../constant";
 import { Progress } from "@material-tailwind/react";
@@ -7,6 +6,7 @@ import CategoryLabel from "../components/CategoryLabel";
 import { categoryLabelColor } from "../constant";
 import PerksAndBenefits from "../components/PerksAndBenefits";
 import { Link, useParams } from "react-router-dom";
+import Button from "../components/Button";
 
 const JobDetails = () => {
   const params = useParams();
@@ -30,11 +30,22 @@ const JobDetails = () => {
               {job.position}
             </Link>
           </Breadcrumbs>
-          <JobCard
-            large={true} 
-            jobData={job}
-            button={true} 
-          />
+          {/* Card */}
+          <div className="flex flex-col lg:flex-row gap-6 font-epilogue p-6 border bg-white border-neutral-20 z-10">
+            <img className="object-contain w-12 h-12 lg:w-auto lg:h-full" src={job.companyLogo} alt="Company logo"/>
+            <div className="flex flex-col gap-2">
+              <h5 className="text-[2rem] font-clashDisplay font-semibold">
+                {job.position}
+              </h5>
+              <p className='text-neutral-80'>{job.companyName} • {job.location}</p>
+              <div className='flex items-center gap-2 flex-wrap mt-auto'>
+            </div>
+            </div> 
+              <div className="flex flex-col ml-auto items-center justify-center w-full min-w-[10rem] lg:w-fit gap-4">
+                <Button label="Apply" action={()=>{}} style="filled" className="min-md:w-full lg:py-4" />
+              </div>
+          </div>
+          {/*  */}
         </div>
       </div>
 

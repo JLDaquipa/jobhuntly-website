@@ -2,20 +2,21 @@ import { Link, NavLink } from "react-router-dom";
 import { textLogoBlack } from "../assets/images";
 import { hamburger } from "../assets/icons";
 import Button from "./Button";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Drawer } from "@material-tailwind/react";
 import MenuBar from "./MenuBar";
 
 const Nav = () => {
-  const [open, setOpen] = useState(false);
+  const [openDrawer, setOpenDrawer] = useState(false);
 
   const activeStyles = {
     color: "#4640DE",
     borderBottom: "4px solid #4640DE",
   }
 
-  const openDrawer = () => setOpen(true);
-  const closeDrawer = () => setOpen(false);
+  useEffect(()=>{
+    document.body.style.overflowY = openDrawer ? "hidden" : "scroll"
+  },[openDrawer])
 
   return (
     <React.Fragment>
@@ -48,12 +49,20 @@ const Nav = () => {
           <Button label="Sign Up" action={()=>{}} style="filled"/>
         </div>
 
-        <div className="lg:hidden block border-solid border-[1px] rounded-full p-2 border-neutral-20 cursor-pointer" onClick={openDrawer}>
+        <div 
+          className="lg:hidden block border-solid border-[1px] rounded-full p-2 border-neutral-20 cursor-pointer" 
+          onClick={() => setOpenDrawer(true)}
+        >
           <img src={hamburger} />
         </div>
 
-        <Drawer open={open} onClose={closeDrawer} placement="right" className="p-4 lg:hidden">
-          <MenuBar close={closeDrawer}/>
+        <Drawer 
+          open={openDrawer} 
+          onClose={() => setOpenDrawer(false)} 
+          placement="right" 
+          className="p-4 lg:hidden"
+        >
+          <MenuBar close={() => setOpenDrawer(false)}/>
         </Drawer>
       </nav>
     </React.Fragment>
