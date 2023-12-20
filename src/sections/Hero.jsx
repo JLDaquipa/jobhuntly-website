@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { drawline,heroImage } from "../assets/images";
 import SearchBar from "../components/SearchBar";
 
 const Hero = () => {
   const [jobSearchInputValue, setJobSearchInputValue] = useState("");
   const [locationInputValue, setLocationInputValue] = useState("");
+  const navigate = useNavigate();
 
   const handleJobChange = (value) => {
     setJobSearchInputValue(value)
@@ -16,6 +18,7 @@ const Hero = () => {
 
   const handleSubmit = () => {
     // Navigate to job search while passing input values
+    navigate(`jobs?job=${jobSearchInputValue}&loc=${locationInputValue}`)
   }
 
   return (

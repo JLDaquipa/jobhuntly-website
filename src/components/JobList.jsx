@@ -4,7 +4,7 @@ import { filters, jobList } from "../constant";
 import JobCard from "./JobCard";
 import Pagination from "./pagination/Pagination";
 import { FilterDataAdvanced } from 'filter-data-advanced/dist/FilterDataAdvanced';
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 const JobList = () => {
   const [openEmploymentType,setOpenEmploymentType] = useState(true);
@@ -12,16 +12,27 @@ const JobList = () => {
   const [openJobLevel, setOpenJobLevel] = useState(true);
   const [openSalaryRange, setOpenSalaryRange] = useState(true);
 
+  const [searchParams, setSearchParams] = useSearchParams();
+  const jobFilter = searchParams.get("job");
+  const locFilter = searchParams.get("loc");
+
   const [currentPageData, setCurrentPageData] = useState([]);
-  const [filteredJobData, setFilteredJobData] = useState(jobList);
+  const [displayedJobData, setDisplayedJobData] = useState([]);
   const [isFiltering,setIsFiltering] = useState(false)
   const filter = new FilterDataAdvanced();
+  
+  const filterJobList = () => {
+    const firstFilter = filter.filterByKeyValue(jobList,"position",jobFilter);
+    return filter.filterByKeyValue(firstFilter,"location",locFilter);
+  }
+  
+  const filteredJobList = jobFilter || locFilter ? filterJobList() : jobList;
 
   useEffect(()=> {
-    filterJobList();
+    filterDisplayedJobList();
   },[])
 
-  const filterJobList = () => {
+  const filterDisplayedJobList = () => {
     // initial filter group values
     let checkedEmploymentType = [""];
     let checkedCategories = [""];
@@ -47,12 +58,12 @@ const JobList = () => {
     }
     
     // Filter logic: Filter first the whole data with the job type group values then filter the returned filtered data to the next filter group value which is the categories and so on
-    const firstFilter = filter.filterByKeyAndMultiValues(jobList,"type",checkedEmploymentType);
+    const firstFilter = filter.filterByKeyAndMultiValues(filteredJobList,"type",checkedEmploymentType);
     const secFilter = filter.filterByKeyAndMultiValues(firstFilter,"categories",checkedCategories);
     const thirdFilter = filter.filterByKeyAndMultiValues(secFilter,"level",checkedLevel);
 
     setTimeout(() => { // to stimulate loading state
-      setFilteredJobData(thirdFilter);
+      setDisplayedJobData(thirdFilter);
       setIsFiltering(false);
     },500)
   }
@@ -95,7 +106,7 @@ const JobList = () => {
                       id={item}
                       name="type"
                       value={item}
-                      onChange={filterJobList}
+                      onChange={filterDisplayedJobList}
                       ripple={false}
                       disabled={isFiltering}
                       className="hover:before:opacity-0 p-0 w-5 h-5 rounded-md border-neutral-20 checked:bg-brand-primary checked:border-brand-primary"
@@ -141,7 +152,7 @@ const JobList = () => {
                       ripple={false}
                       name="categories"
                       value={item}
-                      onChange={filterJobList}
+                      onChange={filterDisplayedJobList}
                       disabled={isFiltering}
                       className="hover:before:opacity-0 p-0 w-5 h-5 rounded-md border-neutral-20 checked:bg-brand-primary checked:border-brand-primary"
                       containerProps={{
@@ -186,7 +197,7 @@ const JobList = () => {
                       ripple={false}
                       name="level"
                       value={item}
-                      onChange={filterJobList}
+                      onChange={filterDisplayedJobList}
                       disabled={isFiltering}
                       className="hover:before:opacity-0 p-0 w-5 h-5 rounded-md border-neutral-20 checked:bg-brand-primary checked:border-brand-primary"
                       containerProps={{
@@ -256,7 +267,7 @@ const JobList = () => {
         {
           isFiltering 
           ? <Spinner className="h-10 w-10 mx-auto" />
-          : filteredJobData.length > 0 
+          : displayedJobData.length > 0 
             ? <div className="transition ease-in-out">
                 <div className="grid grid-cols-1 gap-4 mb-8">
                   { 
@@ -276,7 +287,7 @@ const JobList = () => {
                   <Pagination 
                     currentPageData={setCurrentPageData}
                     dataPerPage={6}
-                    getData={filteredJobData}
+                    getData={displayedJobData}
                     navigation={true}
                   />
                 </div>
