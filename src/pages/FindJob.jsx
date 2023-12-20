@@ -1,10 +1,25 @@
+import { useState } from 'react';
 import { drawline } from '../assets/images';
 import SearchBar from '../components/SearchBar';
-import { Button } from "@material-tailwind/react";
 import JobList from '../components/JobList';
 import { FilterModal } from "../components/FilterModal";
 
 const FindJob = () => {
+  const [jobSearchInputValue, setJobSearchInputValue] = useState("");
+  const [locationInputValue, setLocationInputValue] = useState("");
+
+  const handleJobChange = (value) => {
+    setJobSearchInputValue(value)
+  }
+
+  const handleLocationChange = (value) => {
+    setLocationInputValue(value)
+  }
+
+  const handleSubmit = () => {
+    // Navigate to job search while passing input values
+  }
+
   return (
     <section className='font-epilogue'>
       <div className='padding-x bg-neutral-0 py-10 lg:pt-36 lg:pb-16'>
@@ -16,7 +31,13 @@ const FindJob = () => {
             </span>
           </h2>
           <p className='text-lg text-neutral-80 text-center mb-6'>Find your next career at companies like HubSpot, Nike, and Dropbox</p>
-          <SearchBar />
+          <SearchBar
+            firstInputValue={jobSearchInputValue}
+            secInputValue={locationInputValue}
+            firstInputChangeHandler={handleJobChange}
+            secInputChangeHandler={handleLocationChange}
+            submit={handleSubmit}
+          />
           <p className="text-neutral-100 mt-4">
             Popular : UI Designer, UX Researcher, Android, Admin
           </p>

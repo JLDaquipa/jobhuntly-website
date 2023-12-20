@@ -1,9 +1,25 @@
+import { useState } from "react";
 import SearchBar from "../components/SearchBar";
 import { drawline } from "../assets/images";
 import { FilterModal } from "../components/FilterModal";
 import CompanyList from "../components/CompanyList";
 
 const BrowseCompanies = () => {
+  const [companySearchInputValue, setCompanySearchInputValue] = useState("");
+  const [locationInputValue, setLocationInputValue] = useState("");
+
+  const handleCompanyChange = (value) => {
+    setCompanySearchInputValue(value)
+  }
+
+  const handleLocationChange = (value) => {
+    setLocationInputValue(value)
+  }
+
+  const handleSubmit = () => {
+    // Navigate to job search while passing input values
+  }
+
   return (
     <section className='font-epilogue'>
       <div className='padding-x bg-neutral-0 py-10 lg:pt-36 lg:pb-16'>
@@ -15,7 +31,13 @@ const BrowseCompanies = () => {
             </span>
           </h2>
           <p className='sm:text-lg text-neutral-80 text-center mb-6'>Find the dream companies you dream work for</p>
-          <SearchBar />
+          <SearchBar
+            firstInputValue={companySearchInputValue}
+            secInputValue={locationInputValue}
+            firstInputChangeHandler={handleCompanyChange}
+            secInputChangeHandler={handleLocationChange}
+            submit={handleSubmit}
+          />
           <p className="text-neutral-100 mt-4">
             Popular : Twitter, Microsoft, Apple, Facebook
           </p>
