@@ -1,5 +1,6 @@
 import { jobList } from "../constant";
 import JobCard from "../components/JobCard";
+import { Link } from "react-router-dom";
 
 const LatestJob = () => {
   return (
@@ -7,14 +8,15 @@ const LatestJob = () => {
       <h3 className="font-clashDisplay max-lg:text-[32px] text-4xl  font-semibold text-neutral-100 mb-12 max-lg:mb-0">
         Latest <span className="text-accent-blue"> jobs open</span>
       </h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 max-lg:overflow-x-auto no-scrollbar">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
         { 
-          jobList.map((job, i) => (
-            <JobCard 
-              key={i}
-              label={true}
-              jobData={job}
-            />
+          jobList.slice(0,8).map((job, i) => (
+            <Link to={`jobs/${job.jobID}`} key={i} className="z-[999]">
+              <JobCard
+                label={true}
+                jobData={job}
+              />
+            </Link>
           )) 
         }
       </div>

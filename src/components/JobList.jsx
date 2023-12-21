@@ -5,7 +5,7 @@ import { filters } from "../constant";
 import JobCard from "./JobCard";
 import Pagination from "./pagination/Pagination";
 import { FilterDataAdvanced } from 'filter-data-advanced/dist/FilterDataAdvanced';
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 const JobList = ({jobList}) => {
   const [openEmploymentType,setOpenEmploymentType] = useState(true);
@@ -13,12 +13,18 @@ const JobList = ({jobList}) => {
   const [openJobLevel, setOpenJobLevel] = useState(true);
   const [openSalaryRange, setOpenSalaryRange] = useState(true);
 
+  const [searchParams, setSearchParams] = useSearchParams();
+  const categoryFilter = searchParams.get("category");
+
   const [currentPageData, setCurrentPageData] = useState([]);
   const [displayedJobData, setDisplayedJobData] = useState(jobList);
   const [isFiltering,setIsFiltering] = useState(false)
   const filter = new FilterDataAdvanced();
 
   useEffect(()=> {
+    if(categoryFilter){
+      document.getElementById(`${categoryFilter}`).checked = true;
+    }
     filterDisplayedJobList();
   },[jobList])
 
@@ -88,12 +94,12 @@ const JobList = ({jobList}) => {
                   ripple={false}
                 >
                 <label
-                  htmlFor={item}
+                  htmlFor={item.toLowerCase()}
                   className="flex items-center w-full cursor-pointer"
                 >
                   <ListItemPrefix>
                     <Checkbox
-                      id={item}
+                      id={item.toLowerCase()}
                       name="type"
                       value={item}
                       onChange={filterDisplayedJobList}
@@ -133,12 +139,12 @@ const JobList = ({jobList}) => {
                   ripple={false}
                 >
                 <label
-                  htmlFor={item}
+                  htmlFor={item.toLowerCase()}
                   className="flex items-center w-full cursor-pointer"
                 >
                   <ListItemPrefix>
                     <Checkbox
-                      id={item}
+                      id={item.toLowerCase()}
                       ripple={false}
                       name="categories"
                       value={item}
@@ -178,12 +184,12 @@ const JobList = ({jobList}) => {
                   ripple={false}
                 >
                 <label
-                  htmlFor={item}
+                  htmlFor={item.toLowerCase()}
                   className="flex items-center w-full cursor-pointer"
                 >
                   <ListItemPrefix>
                     <Checkbox
-                      id={item}
+                      id={item.toLowerCase()}
                       ripple={false}
                       name="level"
                       value={item}
@@ -223,12 +229,12 @@ const JobList = ({jobList}) => {
                   ripple={false}
                 >
                 <label
-                  htmlFor={item}
+                  htmlFor={item.toLowerCase()}
                   className="flex items-center w-full cursor-pointer"
                 >
                   <ListItemPrefix>
                     <Checkbox
-                      id={item}
+                      id={item.toLowerCase()}
                       ripple={false}
                       disabled={isFiltering}
                       className="hover:before:opacity-0 p-0 w-5 h-5 rounded-md border-neutral-20 checked:bg-brand-primary checked:border-brand-primary"

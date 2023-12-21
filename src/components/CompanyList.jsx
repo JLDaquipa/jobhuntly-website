@@ -1,23 +1,24 @@
+/* eslint-disable react/prop-types */
 import { Collapse, List, ListItem, ListItemPrefix, Checkbox, Typography, Spinner } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
-import { filters, companyList } from "../constant";
+import { filters } from "../constant";
 import CompanyCard from "./companyCard";
 import Pagination from "./pagination/Pagination";
 import{ FilterDataAdvanced } from 'filter-data-advanced/dist/FilterDataAdvanced';
 import { Link } from "react-router-dom";
 
-const CompanyList = () => {
+const CompanyList = ({companyList}) => {
   const [openIndustry,setOpenIndustry] = useState(true);
   const [openCompanySize, setOpenCompanySize] = useState(true);
 
   const [currentPageData, setCurrentPageData] = useState([]);
-  const [filteredCompanyData, setFilteredCompanyData] = useState(companyList);
+  const [displayedCompanyData, setDisplayedCompanyData] = useState(companyList);
   const [isFiltering,setIsFiltering] = useState(false)
   const filter = new FilterDataAdvanced();
 
   useEffect(()=> {
     filterCompanyList();
-  },[])
+  },[companyList])
 
   const filterCompanyList = () => {
     // initial filter group values
@@ -43,7 +44,7 @@ const CompanyList = () => {
     const secFilter = filter.filterDataBetweenNumbers(firstFilter,"employeeCount",checkedCompanySize[0][0], checkedCompanySize[checkedCompanySize.length - 1][1]);
 
     setTimeout(() => { // to stimulate loading state
-      setFilteredCompanyData(secFilter);
+      setDisplayedCompanyData(secFilter);
       setIsFiltering(false);
     },500)
   }
@@ -159,7 +160,7 @@ const CompanyList = () => {
         {
           isFiltering 
           ? <Spinner className="h-10 w-10 mx-auto" />
-          : filteredCompanyData.length > 0 
+          : displayedCompanyData.length > 0 
             ? <div className="transition ease-in-out">
                 <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4 mb-8">
                   { 
@@ -174,7 +175,7 @@ const CompanyList = () => {
                   <Pagination 
                     currentPageData={setCurrentPageData}
                     dataPerPage={6}
-                    getData={filteredCompanyData}
+                    getData={displayedCompanyData}
                     navigation={true}
                   />
                 </div>

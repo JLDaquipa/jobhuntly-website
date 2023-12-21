@@ -1,5 +1,6 @@
 import { categories } from "../constant";
 import JobCategory from "../components/JobCategory";
+import { Link } from "react-router-dom";
 
 const Category = () => {
   return (
@@ -11,12 +12,14 @@ const Category = () => {
       <div className="grid max-lg:grid-cols-1 max-lg:gap-4 grid-cols-4 gap-8">
         {
           categories.map(({name, icon}) => (
-            <JobCategory name={name} icon={icon} key={name}/>
+            <Link to={`jobs?category=${name}`} key={name}>
+              <JobCategory name={name} icon={icon} />
+            </Link>
           ))
         }
       </div>
       <div className="flex gap-4 text-epilogue text-brand-primary font-semibold cursor-pointer absolute top-28 right-0 max-lg:static">
-        <span>Show all jobs</span>
+        <Link to={"jobs"}>Show all jobs</Link>
         <i className="ri-arrow-right-line"></i>
       </div>
     </div>

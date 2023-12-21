@@ -241,7 +241,7 @@ export const companyList = [
     companyProfile: "Nomad is a software platform for starting and running internet businesses. Millions of businesses rely on Nomad’s software tools to accept payments, expand globally, and manage their businesses online. Nomad has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Nomad is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
     profilePic: nomadLogo,
     companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
-    officeLocations: ["United States", "Japan", "Australia", "China"],
+    officeLocations: ["United States", "Australia", "China"],
     industry: ["business service"],
     contact:[
       {

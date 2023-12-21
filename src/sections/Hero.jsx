@@ -22,7 +22,7 @@ const Hero = () => {
   }
 
   return (
-    <div className="max-container flex pt-40 pb-24 max-md:py-4 relative">
+    <div className="max-container flex lg:pt-40 pb-24 py-4 relative">
       <div className="z-20 w-full flex flex-col">
         <h1 className="text-6xl max-md:text-4xl font-clashDisplay font-semibold">
           <span>Discover</span> <br />
@@ -51,7 +51,7 @@ const Hero = () => {
           className="absolute bottom-0 right-0 z-10 max-lg:hidden" 
           src={heroImage} 
           alt="Hero Image" 
-          width={500}
+          width={550}
         />
       </div>
       

@@ -1,12 +1,13 @@
 /* eslint-disable react/prop-types */
 import CategoryLabel from "./CategoryLabel";
 import { categoryLabelColor } from "../constant";
+import { Link } from "react-router-dom";
 
 const FeaturedJobCard = ({jobData}) => {
-  const {companyName, companyLogo, position, location, type, description, categories } = jobData;
+  const {jobID,companyName, companyLogo, position, location, type, description, categories } = jobData;
 
   return (
-    <div className=' max-lg:min-w-[286px] flex flex-col gap-4 font-epilogue p-6 border border-neutral-20 cursor-pointer hover:shadow-md transition ease-in-out'>
+    <Link to={`jobs/${jobID}`} className='max-lg:min-w-[286px] flex flex-col gap-4 font-epilogue p-6 border border-neutral-20 cursor-pointer hover:shadow-md transition ease-in-out'>
       <div className='flex justify-between gap-4'>
         <img className="object-contain" src={companyLogo} alt="Company logo" width={48} height={48}/>
         <span className='border border-solid border-brand-primary py-1 px-3 capitalize text-brand-primary flex items-center justify-center h-max'>{type}</span>
@@ -29,7 +30,7 @@ const FeaturedJobCard = ({jobData}) => {
         ))
         }
       </div>
-    </div>
+    </Link>
   )
 }
 

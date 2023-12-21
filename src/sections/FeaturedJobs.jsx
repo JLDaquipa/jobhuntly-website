@@ -1,5 +1,6 @@
 import { jobList } from "../constant";
 import FeaturedJobCard from "../components/featuredJobCard";
+import { Link } from "react-router-dom";
 
 const FeaturedJobs = () => {
   return (
@@ -8,10 +9,10 @@ const FeaturedJobs = () => {
         Featured <span className="text-accent-blue"> jobs</span>
       </h3>
       <div className=" grid grid-cols-4 gap-6 max-lg:flex max-lg:gap-4 max-lg:overflow-x-auto no-scrollbar">
-        { jobList.map((job, i) => <FeaturedJobCard key={i} jobData={job}/>) }
+        { jobList.slice(0,8).map((job, i) => <FeaturedJobCard key={i} jobData={job}/>) }
       </div>
       <div className="flex gap-4 text-epilogue text-brand-primary font-semibold cursor-pointer absolute top-8 right-0 max-lg:static">
-        <span>Show all jobs</span>
+        <Link to={"jobs"}>Show all jobs</Link>
         <i className="ri-arrow-right-line"></i>
       </div>
     </div>

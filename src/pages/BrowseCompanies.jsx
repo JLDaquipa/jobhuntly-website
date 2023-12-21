@@ -1,12 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import { drawline } from "../assets/images";
 import { FilterModal } from "../components/FilterModal";
 import CompanyList from "../components/CompanyList";
+import { FilterDataAdvanced } from "filter-data-advanced/dist/FilterDataAdvanced";
+import { companyList } from "../constant";
 
 const BrowseCompanies = () => {
+  const filter = new FilterDataAdvanced();
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  const nameFilter = searchParams.get("name") ? searchParams.get("name") : "";
+  const locationFilter = searchParams.get("loc") ? searchParams.get("loc") : "";
+
   const [companySearchInputValue, setCompanySearchInputValue] = useState("");
   const [locationInputValue, setLocationInputValue] = useState("");
+  const [filteredCompanyList, setFilteredCompanyList] = useState(companyList);
 
   const handleCompanyChange = (value) => {
     setCompanySearchInputValue(value)
@@ -18,7 +28,14 @@ const BrowseCompanies = () => {
 
   const handleSubmit = () => {
     // Navigate to job search while passing input values
+    setSearchParams({name:companySearchInputValue, loc:locationInputValue})
   }
+
+  useEffect(()=> {
+    // filters the array of companies by the name and location key params
+    const firstFilter = filter.filterByKeyValue(companyList,"name",nameFilter);
+    setFilteredCompanyList(filter.filterByKeyValue(firstFilter,"officeLocations",locationFilter))
+  },[searchParams])
 
   return (
     <section className='font-epilogue'>
@@ -48,7 +65,9 @@ const BrowseCompanies = () => {
       </div>
       <section className='py-10 lg:py-16 padding-x'>
         <div className='max-container'>
-          <CompanyList />
+          <CompanyList 
+            companyList={filteredCompanyList}
+          />
         </div>
       </section>
     </section>
