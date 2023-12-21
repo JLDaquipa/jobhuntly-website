@@ -10,17 +10,21 @@ import { jobList } from '../constant';
 const FindJob = () => {
   const filter = new FilterDataAdvanced();
 
+  // get searchParams if params are present else return empty string to filter all jobs
   const [searchParams, setSearchParams] = useSearchParams();
-  const jobFilter = searchParams.get("job");
-  const locFilter = searchParams.get("loc");
+  const jobFilter = searchParams.get("job") ? searchParams.get("job") : "";
+  const locFilter = searchParams.get("loc") ? searchParams.get("loc") : "";
 
   const [jobSearchInputValue, setJobSearchInputValue] = useState(jobFilter);
   const [locationInputValue, setLocationInputValue] = useState(locFilter);
-  const [filteredJobList, setFilteredJobList] = useState(jobList);
+  const [filteredJobList, setFilteredJobList] = useState(jobList); // filtered data to be pass to joblist component for display
+
+  // Handles job key word input 
   const handleJobChange = (value) => {
     setJobSearchInputValue(value);
   }
 
+  // Handles location input 
   const handleLocationChange = (value) => {
     setLocationInputValue(value);
   }
@@ -31,10 +35,9 @@ const FindJob = () => {
   }
   
   useEffect(()=> {
-
+    // filters the array of jobs by the position and location key params
     const firstFilter = filter.filterByKeyValue(jobList,"position",jobFilter);
     setFilteredJobList(filter.filterByKeyValue(firstFilter,"location",locFilter))
-
   },[searchParams])
 
   return (

@@ -14,7 +14,7 @@ const JobList = ({jobList}) => {
   const [openSalaryRange, setOpenSalaryRange] = useState(true);
 
   const [currentPageData, setCurrentPageData] = useState([]);
-  const [displayedJobData, setDisplayedJobData] = useState([]);
+  const [displayedJobData, setDisplayedJobData] = useState(jobList);
   const [isFiltering,setIsFiltering] = useState(false)
   const filter = new FilterDataAdvanced();
 
