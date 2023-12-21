@@ -1,24 +1,41 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { drawline } from '../assets/images';
 import SearchBar from '../components/SearchBar';
 import JobList from '../components/JobList';
 import { FilterModal } from "../components/FilterModal";
+import { FilterDataAdvanced } from 'filter-data-advanced/dist/FilterDataAdvanced';
+import { jobList } from '../constant';
 
 const FindJob = () => {
-  const [jobSearchInputValue, setJobSearchInputValue] = useState("");
-  const [locationInputValue, setLocationInputValue] = useState("");
+  const filter = new FilterDataAdvanced();
 
+  const [searchParams, setSearchParams] = useSearchParams();
+  const jobFilter = searchParams.get("job");
+  const locFilter = searchParams.get("loc");
+
+  const [jobSearchInputValue, setJobSearchInputValue] = useState(jobFilter);
+  const [locationInputValue, setLocationInputValue] = useState(locFilter);
+  const [filteredJobList, setFilteredJobList] = useState(jobList);
   const handleJobChange = (value) => {
-    setJobSearchInputValue(value)
+    setJobSearchInputValue(value);
   }
 
   const handleLocationChange = (value) => {
-    setLocationInputValue(value)
+    setLocationInputValue(value);
   }
 
   const handleSubmit = () => {
     // Navigate to job search while passing input values
+    setSearchParams({job:jobSearchInputValue, loc:locationInputValue})
   }
+  
+  useEffect(()=> {
+
+    const firstFilter = filter.filterByKeyValue(jobList,"position",jobFilter);
+    setFilteredJobList(filter.filterByKeyValue(firstFilter,"location",locFilter))
+
+  },[searchParams])
 
   return (
     <section className='font-epilogue'>
@@ -48,7 +65,7 @@ const FindJob = () => {
       </div>
       <section className='py-10 lg:py-16 padding-x'>
         <div className='max-container'>
-          <JobList />
+          <JobList jobList={filteredJobList} />
         </div>
       </section>
     </section>

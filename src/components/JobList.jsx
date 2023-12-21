@@ -1,36 +1,26 @@
+/* eslint-disable react/prop-types */
 import { Collapse, List, ListItem, ListItemPrefix, Checkbox, Typography, Spinner } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
-import { filters, jobList } from "../constant";
+import { filters } from "../constant";
 import JobCard from "./JobCard";
 import Pagination from "./pagination/Pagination";
 import { FilterDataAdvanced } from 'filter-data-advanced/dist/FilterDataAdvanced';
-import { Link, useSearchParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const JobList = () => {
+const JobList = ({jobList}) => {
   const [openEmploymentType,setOpenEmploymentType] = useState(true);
   const [openCategories, setOpenCategories] = useState(true);
   const [openJobLevel, setOpenJobLevel] = useState(true);
   const [openSalaryRange, setOpenSalaryRange] = useState(true);
 
-  const [searchParams, setSearchParams] = useSearchParams();
-  const jobFilter = searchParams.get("job");
-  const locFilter = searchParams.get("loc");
-
   const [currentPageData, setCurrentPageData] = useState([]);
   const [displayedJobData, setDisplayedJobData] = useState([]);
   const [isFiltering,setIsFiltering] = useState(false)
   const filter = new FilterDataAdvanced();
-  
-  const filterJobList = () => {
-    const firstFilter = filter.filterByKeyValue(jobList,"position",jobFilter);
-    return filter.filterByKeyValue(firstFilter,"location",locFilter);
-  }
-  
-  const filteredJobList = jobFilter || locFilter ? filterJobList() : jobList;
 
   useEffect(()=> {
     filterDisplayedJobList();
-  },[])
+  },[jobList])
 
   const filterDisplayedJobList = () => {
     // initial filter group values
@@ -58,7 +48,7 @@ const JobList = () => {
     }
     
     // Filter logic: Filter first the whole data with the job type group values then filter the returned filtered data to the next filter group value which is the categories and so on
-    const firstFilter = filter.filterByKeyAndMultiValues(filteredJobList,"type",checkedEmploymentType);
+    const firstFilter = filter.filterByKeyAndMultiValues(jobList,"type",checkedEmploymentType);
     const secFilter = filter.filterByKeyAndMultiValues(firstFilter,"categories",checkedCategories);
     const thirdFilter = filter.filterByKeyAndMultiValues(secFilter,"level",checkedLevel);
 
