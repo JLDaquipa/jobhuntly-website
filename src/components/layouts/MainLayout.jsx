@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet,ScrollRestoration } from "react-router-dom";
 
 import Nav from "../Nav";
 import Footer from "../../sections/Footer";
@@ -15,6 +15,7 @@ const MainLayout = () => {
       <footer className='padding-x bg-[#202430] py-10 lg:py-16'>
         <Footer />
       </footer>
+      <ScrollRestoration />
     </div>
   )
 }
