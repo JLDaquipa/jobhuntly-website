@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { drawline } from '../assets/images';
 import SearchBar from '../components/SearchBar';
-import JobList from '../components/JobList';
-import { FilterModal } from "../components/FilterModal";
+import JobList from '../sections/JobList';
 import { FilterDataAdvanced } from 'filter-data-advanced/dist/FilterDataAdvanced';
 import { jobList } from '../constant';
 
@@ -63,14 +62,7 @@ const FindJob = () => {
           </p>
         </div>
       </div>
-      <div className="hidden max-lg:block py-3 border-y-[1px]">
-        <FilterModal />
-      </div>
-      <section className='py-10 lg:py-16 padding-x'>
-        <div className='max-container'>
-          <JobList jobList={filteredJobList} />
-        </div>
-      </section>
+      <JobList jobList={filteredJobList} />
     </section>
   )
 }
