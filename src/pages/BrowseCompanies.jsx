@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import { drawline } from "../assets/images";
-import { FilterModal } from "../components/FilterModal";
-import CompanyList from "../components/CompanyList";
+import CompanyList from "../sections/CompanyList";
 import { FilterDataAdvanced } from "filter-data-advanced/dist/FilterDataAdvanced";
 import { companyList } from "../constant";
 
@@ -60,16 +59,7 @@ const BrowseCompanies = () => {
           </p>
         </div>
       </div>
-      <div className="hidden max-lg:block py-3 border-y-[1px]">
-        <FilterModal />
-      </div>
-      <section className='py-10 lg:py-16 padding-x'>
-        <div className='max-container'>
-          <CompanyList 
-            companyList={filteredCompanyList}
-          />
-        </div>
-      </section>
+      <CompanyList companyList={filteredCompanyList} />
     </section>
   )
 }

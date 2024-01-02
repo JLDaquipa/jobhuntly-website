@@ -12,7 +12,7 @@ const Button = ({label, action, style, className}) => {
   return (
     <button 
       className={`px-6 py-3 font-bold cursor-pointer font-epilogue ${buttonStyle} w-full lg:w-max ${className} rounded-sm transition-all ease-in-out`} 
-      onClick={() => action()}
+      onClick={action}
     >
       {label}
     </button>

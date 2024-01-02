@@ -103,7 +103,7 @@ const JobList = ({jobList}) => {
             {/* Filter Col */}
             {
               openFilter && width <= 1024 &&
-              <div className="absolute inset-0 w-full h-full p-8 z-[9995] bg-black bg-opacity-60 backdrop-blur-sm"></div>
+              <div className="absolute inset-0 w-full h-full p-8 z-[9995] bg-[#0D0B41] bg-opacity-60 backdrop-blur-sm"></div>
             }
             <div className={width > 1024 ? "w-[230px]" : `w-full bg-transparent fixed inset-1 z-[9999] p-8 ${!openFilter ? "hidden" : ""}`}>
                 {

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Breadcrumbs } from "@material-tailwind/react";
 import { jobList } from "../constant";
 import { companyList } from "../constant";
@@ -7,12 +8,15 @@ import { categoryLabelColor } from "../constant";
 import PerksAndBenefits from "../components/PerksAndBenefits";
 import { Link, useParams } from "react-router-dom";
 import Button from "../components/Button";
+import { ApplyModal } from "../components/ApplyModal";
 
 const JobDetails = () => {
   const params = useParams();
   const job = jobList.find((job) => job.jobID == params.jobID);
   const company = companyList.find((company) => company.companyID == job.companyID);
   const progressPercentage = (job.applied / job.capacity) * 100;
+
+  const [openModal, setOpenModal] = useState(false);
 
   return (
     <section className="font-epilogue">
@@ -42,13 +46,15 @@ const JobDetails = () => {
             </div>
             </div> 
               <div className="flex flex-col ml-auto items-center justify-center w-full min-w-[10rem] lg:w-fit gap-4">
-                <Button label="Apply" action={()=>{}} style="filled" className="min-md:w-full lg:py-4" />
+                <Button label="Apply" action={()=> setOpenModal(true)} style="filled" className="min-md:w-full lg:py-4" />
               </div>
           </div>
           {/*  */}
         </div>
       </div>
-
+      {
+        openModal && <ApplyModal close={()=>setOpenModal(false)} jobData={job}/>
+      }
       <div className="padding-x w-full">
         <div className="max-container">
           <div className="flex flex-col gap-12 py-[4.5rem] w-full lg:flex-row">
@@ -168,7 +174,9 @@ const JobDetails = () => {
                 <img src={company.profilePic} alt="Company Logo" />
                 <div>
                   <h3 className="text-neutral-100 font-clashDisplay font-semibold text-[2rem]">{company.name}</h3>
-                  <span className="text-brand-primary font-semibold cursor-pointer">Read more about {company.name} <i className="ri-arrow-right-line"></i></span>
+                  <Link to={`../companies/${company.companyID}`} className="text-brand-primary font-semibold cursor-pointer">
+                    <span>Read more about {company.name} <i className="ri-arrow-right-line"></i></span>
+                  </Link>
                 </div>
               </div>
               <p className="line-clamp-3 text-neutral-80">{company.companyProfile}</p>
