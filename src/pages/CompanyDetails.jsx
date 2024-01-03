@@ -5,13 +5,18 @@ import PerksAndBenefits from "../components/PerksAndBenefits";
 import { techStack } from "../constant";
 import { useCountries } from "use-react-countries";
 import { Link, useParams } from "react-router-dom";
+import { jobList } from "../constant";
+import JobCard from "../components/JobCard";
+import { FilterDataAdvanced } from 'filter-data-advanced/dist/FilterDataAdvanced';
 
 const CompanyDetails = () => {
+  const filter = new FilterDataAdvanced();
   const { countries } = useCountries();
   const params = useParams()
   const company = companyList.find((company) => company.companyID == params.companyID);
 
   return (
+    <>
     <section className="font-epilogue">
       <div className='padding-x bg-neutral-0 lg:pt-[3.75rem]'>
         <div className='max-container py-10'>
@@ -170,6 +175,29 @@ const CompanyDetails = () => {
         </div>
       </div>
     </section>
+    <section className='padding-x bg-neutral-0 relative'>
+      <div className="max-container pb-10 max-lg:pt-10 lg:py-16 flex flex-col relative max-lg:gap-6 gap-0">
+        <h3 className="font-clashDisplay max-lg:text-[32px] text-4xl  font-semibold text-neutral-100 mb-12 max-lg:mb-0">
+          Open jobs
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+          { 
+            
+            filter.filterByKeyAndMultiValues(jobList,"jobID",company.openJobs.map(job=>job.jobID.toString())).slice(0,8).map((job) => (
+              <Link to={`../jobs/${job.jobID}`} key={job.jobID} className="z-[999]">
+                <JobCard
+                  label={true}
+                  jobData={job}
+                />
+              </Link>
+            )) 
+          }
+        </div>
+      </div>
+      <div className="w-2/3 bg-hero bg-cover h-full absolute right-0 top-0 z-1">
+      </div>
+    </section>
+    </>
   )
 }
 

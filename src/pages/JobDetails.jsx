@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Breadcrumbs } from "@material-tailwind/react";
-import { jobList } from "../constant";
+import { categories, jobList } from "../constant";
 import { companyList } from "../constant";
 import { Progress } from "@material-tailwind/react";
 import CategoryLabel from "../components/CategoryLabel";
@@ -9,16 +9,20 @@ import PerksAndBenefits from "../components/PerksAndBenefits";
 import { Link, useParams } from "react-router-dom";
 import Button from "../components/Button";
 import { ApplyModal } from "../components/ApplyModal";
+import JobCard from "../components/JobCard";
+import { FilterDataAdvanced } from 'filter-data-advanced/dist/FilterDataAdvanced';
 
 const JobDetails = () => {
   const params = useParams();
   const job = jobList.find((job) => job.jobID == params.jobID);
   const company = companyList.find((company) => company.companyID == job.companyID);
   const progressPercentage = (job.applied / job.capacity) * 100;
+  const filter = new FilterDataAdvanced();
 
   const [openModal, setOpenModal] = useState(false);
 
   return (
+    <>
     <section className="font-epilogue">
 
       <div className='padding-x bg-neutral-0 pt-[3.75rem]'>
@@ -190,6 +194,29 @@ const JobDetails = () => {
         </div>
       </div>
     </section>
+    <section className='padding-x bg-neutral-0 relative'>
+      <div className="max-container pb-10 max-lg:pt-10 lg:py-16 flex flex-col relative max-lg:gap-6 gap-0">
+        <h3 className="font-clashDisplay max-lg:text-[32px] text-4xl  font-semibold text-neutral-100 mb-12 max-lg:mb-0">
+          Similar jobs
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+          { 
+            
+            filter.filterByKeyAndMultiValues(jobList,"categories",job.categories).slice(0,8).map((job, i) => (
+              <Link to={`../jobs/${job.jobID}`} key={i} className="z-[999]">
+                <JobCard
+                  label={true}
+                  jobData={job}
+                />
+              </Link>
+            )) 
+          }
+        </div>
+      </div>
+      <div className="w-2/3 bg-hero bg-cover h-full absolute right-0 top-0 z-1">
+      </div>
+    </section>
+    </>
   )
 }
 

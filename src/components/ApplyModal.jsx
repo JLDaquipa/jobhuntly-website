@@ -1,13 +1,18 @@
 /* eslint-disable react/prop-types */
-import React from "react";
+import React, { useState } from "react";
+import { Spinner } from "@material-tailwind/react";
  
 export function ApplyModal({close, jobData}) {
   const {companyName, companyLogo, position, location, type} = jobData;
+  const [onApply,setOnApply] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log("Application Submitted")
-    close()
+    setOnApply(true)
+    setTimeout(()=> {
+      close()
+      setOnApply(false)
+    },3000)
   }
 
   return (
@@ -46,6 +51,7 @@ export function ApplyModal({close, jobData}) {
                   placeholder="Enter your fullname" 
                   id="fullName" 
                   name="fullName"
+                  required
                   className="font-epilogue py-3 px-4 border-[1px] border-neutral-20 outline-neutral-60"
                 />
               </div>
@@ -56,6 +62,7 @@ export function ApplyModal({close, jobData}) {
                   placeholder="Enter your email address" 
                   id="email" 
                   name="email"
+                  required
                   className="font-epilogue py-3 px-4 border-[1px] border-neutral-20 outline-neutral-60"
                 />
               </div>
@@ -66,6 +73,7 @@ export function ApplyModal({close, jobData}) {
                   placeholder="Enter your phone number" 
                   id="phone" 
                   name="phone"
+                  required
                   className="font-epilogue py-3 px-4 border-[1px] border-neutral-20 outline-neutral-60"
                 />
               </div>
@@ -76,6 +84,7 @@ export function ApplyModal({close, jobData}) {
                   placeholder="What’s your current or previous job title?" 
                   id="prevJob" 
                   name="prevJob"
+                  required
                   className="font-epilogue py-3 px-4 border-[1px] border-neutral-20 outline-neutral-60"
                 />
               </div>
@@ -134,9 +143,10 @@ export function ApplyModal({close, jobData}) {
 
               <button
                 type="submit"
-                className={`px-6 py-3 font-bold cursor-pointer font-epilogue bg-brand-primary text-white hover:bg-[#3f3ac8] w-full rounded-sm transition-all ease-in-out`} 
+                className="px-6 py-3 font-bold cursor-pointer font-epilogue bg-brand-primary text-white hover:bg-[#3f3ac8] w-full rounded-sm transition-all ease-in-out flex justify-center items-center"
+                disabled={onApply}
               >
-                Submit Application
+                {onApply ? <Spinner className="text-white"/> : "Submit Application"}
               </button>
 
               <p className="text-neutral-80">By sending the request you can confirm that you accept our <span className="text-brand-primary">Terms of Service</span> and <span className="text-brand-primary">Privacy Policy</span></p>
