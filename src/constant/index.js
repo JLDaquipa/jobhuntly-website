@@ -481,7 +481,7 @@ export const companyList = [
         social: ["instagram", "linkedIn"],
       },
     ],
-    openJobs:[{jobID:16}],
+    openJobs:[{jobID:2},{jobID:16}],
     perks:[],
   },
   {
@@ -536,9 +536,9 @@ export const companyList = [
   },
   {
     companyID: 7,
-    name: "Blinklist",
+    name: "Blinkist",
     founded:"2011-07-31", // YYYY-MM-DD
-    companyLink:"https://blinklist.com",
+    companyLink:"https://blinkist.com",
     companyProfile: "Blinkist is a digital platform that offers condensed summaries of non-fiction books, providing users with key insights and takeaways in a format that can be consumed quickly. Launched in 2012, the Berlin-based service aims to cater to individuals seeking to acquire knowledge from a variety of topics without investing the time required to read entire books. Blinkist's library includes summaries, or 'Blinks,' of best-selling non-fiction works, spanning genres such as self-help, business, and technology. The platform is designed to make learning more accessible, allowing users to grasp the main ideas and concepts of a book within a short reading or listening session. Subscribers can choose between reading or listening to the summaries, making it a popular choice for those looking to maximize learning in a time-efficient manner.",
     profilePic: blinkistLogo,
     companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
@@ -547,15 +547,15 @@ export const companyList = [
     contact:[
       {
         name: "twitter",
-        contactUrl: "twitter.com/blinklist",
+        contactUrl: "twitter.com/blinkist",
       },
       {
         name: "facebook",
-        contactUrl: "facebook.com/blinklist",
+        contactUrl: "facebook.com/blinkist",
       },
       {
         name: "linkedIn",
-        contactUrl: "linkedin.com/company/blinklist",
+        contactUrl: "linkedin.com/company/blinkist",
       },
     ],
     employeeCount: 4000,

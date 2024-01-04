@@ -183,7 +183,7 @@ const CompanyDetails = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
           { 
             
-            filter.filterByKeyAndMultiValues(jobList,"jobID",company.openJobs.map(job=>job.jobID.toString())).slice(0,8).map((job) => (
+            filter.filterByKeyValue(jobList,"companyName",company.name).slice(0,8).map((job) => (
               <Link to={`../jobs/${job.jobID}`} key={job.jobID} className="z-[999]">
                 <JobCard
                   label={true}
