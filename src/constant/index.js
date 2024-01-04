@@ -283,57 +283,57 @@ export const companyList = [
     openJobs:[{jobID:9}],
     perks:[],
   },
-  {
-    companyID: 2,
-    name: "Stripe",
-    founded:"2011-07-31", // YYYY-MM-DD
-    companyLink:"https://stripe.com",
-    companyProfile: "Stripe is a software platform for starting and running internet businesses. Millions of businesses rely on Stripe’s software tools to accept payments, expand globally, and manage their businesses online. Stripe has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Stripe is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
-    profilePic: stripeLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
-    officeLocations: ["United States", "Japan", "Australia", "China"],
-    industry: ["payment gateway"],
-    contact:[
-      {
-        name: "twitter",
-        contactUrl: "twitter.com/nomad",
-      },
-      {
-        name: "facebook",
-        contactUrl: "facebook.com/NomadHQ",
-      },
-      {
-        name: "linkedIn",
-        contactUrl: "linkedin.com/company/nomad",
-      },
-    ],
-    employeeCount: 300,
-    categories:["marketing", "design"],
-    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
-    team:[
-      {
-        name: "Célestin Gardinier",
-        avatar: "",
-        role: "CEO & Co-Founder",
-        social: ["instagram", "linkedIn"],
-      },
-      {
-        name: "Reynaud Colbert",
-        avatar: "",
-        role: "Co-Founder",
-        social: ["instagram", "linkedIn"],
-      },
-      {
-        name: "Arienne Lyon",
-        avatar: "",
-        role: "Managing Director",
-        social: ["instagram", "linkedIn"],
-      },
+  // {
+  //   companyID: 2,
+  //   name: "Stripe",
+  //   founded:"2011-07-31", // YYYY-MM-DD
+  //   companyLink:"https://stripe.com",
+  //   companyProfile: "Stripe is a software platform for starting and running internet businesses. Millions of businesses rely on Stripe’s software tools to accept payments, expand globally, and manage their businesses online. Stripe has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Stripe is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
+  //   profilePic: stripeLogo,
+  //   companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+  //   officeLocations: ["United States", "Japan", "Australia", "China"],
+  //   industry: ["payment gateway"],
+  //   contact:[
+  //     {
+  //       name: "twitter",
+  //       contactUrl: "twitter.com/stripe",
+  //     },
+  //     {
+  //       name: "facebook",
+  //       contactUrl: "facebook.com/stripe",
+  //     },
+  //     {
+  //       name: "linkedIn",
+  //       contactUrl: "linkedin.com/company/stripe",
+  //     },
+  //   ],
+  //   employeeCount: 300,
+  //   categories:["marketing", "design"],
+  //   stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+  //   team:[
+  //     {
+  //       name: "Célestin Gardinier",
+  //       avatar: "",
+  //       role: "CEO & Co-Founder",
+  //       social: ["instagram", "linkedIn"],
+  //     },
+  //     {
+  //       name: "Reynaud Colbert",
+  //       avatar: "",
+  //       role: "Co-Founder",
+  //       social: ["instagram", "linkedIn"],
+  //     },
+  //     {
+  //       name: "Arienne Lyon",
+  //       avatar: "",
+  //       role: "Managing Director",
+  //       social: ["instagram", "linkedIn"],
+  //     },
       
-    ],
-    openJobs:[{jobID:9}],
-    perks:[],
-  },
+  //   ],
+  //   openJobs:[{jobID:9}],
+  //   perks:[],
+  // },
   {
     companyID: 3,
     name: "Square",
@@ -347,15 +347,15 @@ export const companyList = [
     contact:[
       {
         name: "twitter",
-        contactUrl: "twitter.com/nomad",
+        contactUrl: "twitter.com/square",
       },
       {
         name: "facebook",
-        contactUrl: "facebook.com/NomadHQ",
+        contactUrl: "facebook.com/square",
       },
       {
         name: "linkedIn",
-        contactUrl: "linkedin.com/company/nomad",
+        contactUrl: "linkedin.com/company/square",
       },
     ],
     employeeCount: 4000,
@@ -381,7 +381,7 @@ export const companyList = [
         social: ["instagram", "linkedIn"],
       },
     ],
-    openJobs:[{jobID:9}],
+    openJobs:[],
     perks:[],
   },
   {
@@ -397,15 +397,15 @@ export const companyList = [
     contact:[
       {
         name: "twitter",
-        contactUrl: "twitter.com/nomad",
+        contactUrl: "twitter.com/revolut",
       },
       {
         name: "facebook",
-        contactUrl: "facebook.com/NomadHQ",
+        contactUrl: "facebook.com/revolut",
       },
       {
         name: "linkedIn",
-        contactUrl: "linkedin.com/company/nomad",
+        contactUrl: "linkedin.com/company/revolut",
       },
     ],
     employeeCount: 4000,
@@ -431,7 +431,7 @@ export const companyList = [
         social: ["instagram", "linkedIn"],
       },
     ],
-    openJobs:[{jobID:9}],
+    openJobs:[{jobID:1}],
     perks:[],
   },
   {
@@ -447,18 +447,18 @@ export const companyList = [
     contact:[
       {
         name: "twitter",
-        contactUrl: "twitter.com/nomad",
+        contactUrl: "twitter.com/dropbox",
       },
       {
         name: "facebook",
-        contactUrl: "facebook.com/NomadHQ",
+        contactUrl: "facebook.com/dropbox",
       },
       {
         name: "linkedIn",
-        contactUrl: "linkedin.com/company/nomad",
+        contactUrl: "linkedin.com/company/dropbox",
       },
     ],
-    employeeCount: 4000,
+    employeeCount: 6000,
     categories:["marketing", "design"],
     stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
     team:[
@@ -481,7 +481,7 @@ export const companyList = [
         social: ["instagram", "linkedIn"],
       },
     ],
-    openJobs:[{jobID:9}],
+    openJobs:[{jobID:16}],
     perks:[],
   },
   {
@@ -497,15 +497,15 @@ export const companyList = [
     contact:[
       {
         name: "twitter",
-        contactUrl: "twitter.com/nomad",
+        contactUrl: "twitter.com/pitch",
       },
       {
         name: "facebook",
-        contactUrl: "facebook.com/NomadHQ",
+        contactUrl: "facebook.com/pitch",
       },
       {
         name: "linkedIn",
-        contactUrl: "linkedin.com/company/nomad",
+        contactUrl: "linkedin.com/company/pitch",
       },
     ],
     employeeCount: 4000,
@@ -531,7 +531,557 @@ export const companyList = [
         social: ["instagram", "linkedIn"],
       },
     ],
-    openJobs:[{jobID:9}],
+    openJobs:[{jobID:3}],
+    perks:[],
+  },
+  {
+    companyID: 7,
+    name: "Blinklist",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://blinklist.com",
+    companyProfile: "Blinkist is a digital platform that offers condensed summaries of non-fiction books, providing users with key insights and takeaways in a format that can be consumed quickly. Launched in 2012, the Berlin-based service aims to cater to individuals seeking to acquire knowledge from a variety of topics without investing the time required to read entire books. Blinkist's library includes summaries, or 'Blinks,' of best-selling non-fiction works, spanning genres such as self-help, business, and technology. The platform is designed to make learning more accessible, allowing users to grasp the main ideas and concepts of a book within a short reading or listening session. Subscribers can choose between reading or listening to the summaries, making it a popular choice for those looking to maximize learning in a time-efficient manner.",
+    profilePic: blinkistLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    officeLocations: ["United States", "Japan", "Australia", "China"],
+    industry: ["business service"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/blinklist",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/blinklist",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/blinklist",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:4}],
+    perks:[],
+  },
+  {
+    companyID: 8,
+    name: "ClassPass",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://classpass.com",
+    companyProfile: "ClassPass is a subscription-based fitness platform that offers users access to a wide variety of fitness classes and studios. Founded in 2013, this service allows members to explore and attend fitness classes in their local area, ranging from traditional gym workouts and yoga sessions to unique and specialized classes like spinning, pilates, and more. Users can book classes through the ClassPass app, providing flexibility and variety in their fitness routines. ClassPass operates on a credit system, with members receiving a certain number of credits per month that they can use to book classes. The platform has gained popularity for its convenience, enabling users to discover and participate in diverse fitness activities without being tied to a single gym membership.",
+    profilePic: classPassLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    officeLocations: ["United States", "Japan", "Australia", "China"],
+    industry: ["business service"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/classpass",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/classpass",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/classpass",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:5}],
+    perks:[],
+  },
+  {
+    companyID: 9,
+    name: "Canva",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://canva.com",
+    companyProfile: "Canva is a web-based graphic design platform that enables users to create a wide range of visual content, including presentations, social media graphics, posters, and more, without the need for advanced design skills. Founded in 2012, the platform offers a user-friendly interface with drag-and-drop functionality, making it accessible to individuals and businesses alike. Canva provides a vast library of templates, images, icons, and fonts, allowing users to customize and design professional-looking materials. With both free and premium subscription options, Canva has become a popular tool for anyone looking to produce visually appealing and engaging content for various purposes, from marketing materials to educational resources.",
+    profilePic: canvaLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    officeLocations: ["United States", "Japan", "Australia", "China"],
+    industry: ["media", "business service"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/canva",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/canva",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/canva",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:6}],
+    perks:[],
+  },
+  {
+    companyID: 10,
+    name: "GoDaddy",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://godaddy.com",
+    companyProfile: "GoDaddy is a well-known American domain registrar and web hosting company. Founded in 1997, GoDaddy has become one of the largest domain registration and hosting providers globally. The company offers a range of services, including domain registration, website hosting, website building tools, and online marketing solutions for individuals and businesses. GoDaddy is recognized for its user-friendly platform that simplifies the process of acquiring domains, setting up websites, and managing online presence. Additionally, the company provides various tools and services to help users establish and grow their online ventures.",
+    profilePic: goDaddyLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    officeLocations: ["United States", "Japan", "Australia", "China"],
+    industry: ["business service"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/godaddy",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/godaddy",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/godaddy",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:7}],
+    perks:[],
+  },
+  {
+    companyID: 11,
+    name: "Twitter",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://twitter.com",
+    companyProfile: "Twitter is a prominent social media platform founded in 2006, dedicated to fostering real-time conversations and information sharing globally. With millions of active users, our platform enables individuals, businesses, and organizations to communicate through short-form messages known as 'tweets.' Users can share text, photos, videos, and links, engaging in public discussions and following topics of interest through hashtags. Twitter has become a vital channel for breaking news, cultural trends, and social movements, offering a dynamic space for diverse voices to connect and express themselves. As a company, we are committed to facilitating open dialogue, providing a space for users to express thoughts, connect with others, and stay informed about the latest events and trends.",
+    profilePic: twitterLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    officeLocations: ["United States", "Japan", "Australia", "China"],
+    industry: ["media"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/twitter",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/twitter",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/twitter",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:8}],
+    perks:[],
+  },
+  {
+    companyID: 12,
+    name: "Netlify",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://netlify.com",
+    companyProfile: "Netlify is a leading web development and hosting platform that empowers companies and developers to build and deploy modern web applications with ease. Since our founding in 2014, we have been committed to streamlining the web development process by offering an all-in-one platform. Developers can deploy websites directly from their Git repositories, taking advantage of features such as continuous integration, serverless functions, and global content delivery. Our platform is designed to enhance collaboration and speed up development workflows, providing a scalable and efficient solution for projects of all sizes. With a focus on simplicity and innovation, Netlify supports the latest web technologies, making it a preferred choice for those seeking a developer-friendly and cutting-edge solution.",
+    profilePic: netlifyLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    officeLocations: ["United States", "Japan", "Australia", "China"],
+    industry: ["business service"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/netlify",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/netlify",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/netlify",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:10}],
+    perks:[],
+  },
+  {
+    companyID: 13,
+    name: "Maze",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://maze.com",
+    companyProfile: "Maze is a user testing and usability testing platform that facilitates the design iteration process for digital products. Since its establishment, Maze has been dedicated to helping product teams create better user experiences by offering tools for prototyping, testing, and analyzing user interactions. By leveraging Maze, designers and product managers can turn their designs into interactive prototypes and conduct usability tests with real users. The platform generates valuable insights and analytics, allowing teams to make data-driven decisions and optimize their designs efficiently. Maze aims to streamline the user testing process, ultimately improving the overall user experience of digital products.",
+    profilePic: mazeLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    officeLocations: ["United States", "Japan", "Australia", "China"],
+    industry: ["business service"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/maze",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/maze",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/maze",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:11}],
+    perks:[],
+  },
+  {
+    companyID: 14,
+    name: "Terraform",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://terraform.com",
+    companyProfile: "Terraform is an open-source infrastructure as code (IaC) tool developed by HashiCorp. It serves as a key component in modern cloud and infrastructure management, enabling users to define and provision infrastructure resources in a declarative configuration language. Terraform supports a wide range of cloud providers, including AWS, Azure, Google Cloud, and more, allowing for a consistent and scalable approach to infrastructure provisioning. By defining infrastructure as code, Terraform provides a collaborative and version-controlled methodology, automating the deployment and management of complex infrastructure setups. Its flexibility, ease of use, and ability to work with multi-cloud environments make Terraform a popular choice among DevOps professionals and organizations embracing cloud technologies.",
+    profilePic: terraformLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    officeLocations: ["United States", "Japan", "Australia", "China"],
+    industry: ["cloud", "business service"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/terraform",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/terraform",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/terraform",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:12}],
+    perks:[],
+  },
+  {
+    companyID: 15,
+    name: "Udacity",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://udacity.com",
+    companyProfile: "Udacity is a global online education platform focused on providing industry-relevant, technology-driven education. Established in 2012, Udacity collaborates with leading tech companies to offer nanodegree programs and courses in fields such as data science, artificial intelligence, programming, and digital marketing. The platform's unique approach includes project-based learning, mentorship, and real-world applications, designed to equip learners with practical skills and prepare them for careers in rapidly evolving industries. Udacity's emphasis on hands-on experience and collaboration with industry professionals makes it a popular choice for individuals seeking to advance their careers in technology and other high-demand fields.",
+    profilePic: udacityLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    officeLocations: ["United States", "Japan", "Australia", "China"],
+    industry: ["business service"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/udacity",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/udacity",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/udacity",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:13}],
+    perks:[],
+  },
+  {
+    companyID: 16,
+    name: "Packer",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://packer.com",
+    companyProfile: "Packer is an open-source tool developed by HashiCorp that automates the creation of identical machine images for multiple platforms from a single source configuration. Released in 2013, Packer allows developers and operations teams to define machine images as code, providing a consistent and reproducible process for creating virtual machine and container images. Supporting various providers such as AWS, Azure, Docker, and more, Packer helps streamline the image-building process, ensuring that development, testing, and production environments are aligned. By automating the image creation process, Packer enhances infrastructure as code (IaC) practices, enabling organizations to efficiently manage and deploy standardized machine images across diverse cloud and on-premises environments.",
+    profilePic: packerLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    officeLocations: ["United States", "Japan", "Australia", "China"],
+    industry: ["media","business service"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/packer",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/packer",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/packer",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:14}],
+    perks:[],
+  },
+  {
+    companyID: 17,
+    name: "Webflow",
+    founded:"2011-07-31", // YYYY-MM-DD
+    companyLink:"https://packer.com",
+    companyProfile: "Webflow, founded in 2013, is a web design and development platform that empowers users to create responsive, visually stunning websites without the need for coding expertise. Catering to both designers and developers, Webflow combines a robust visual editor with powerful design and hosting capabilities. Users can build custom websites, e-commerce stores, and landing pages using a drag-and-drop interface, while also having the flexibility to dive into the underlying code for more advanced customization. With features like CMS (Content Management System) functionality and seamless integrations, Webflow streamlines the web development process, offering a comprehensive solution for those seeking to design and launch professional websites efficiently.",
+    profilePic: webflowLogo,
+    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    officeLocations: ["United States", "Japan", "Australia", "China"],
+    industry: ["business service","media"],
+    contact:[
+      {
+        name: "twitter",
+        contactUrl: "twitter.com/webflow",
+      },
+      {
+        name: "facebook",
+        contactUrl: "facebook.com/webflow",
+      },
+      {
+        name: "linkedIn",
+        contactUrl: "linkedin.com/company/webflow",
+      },
+    ],
+    employeeCount: 4000,
+    categories:["marketing", "design"],
+    stack:["HTML 5","CSS 3", "JavaScript", "Ruby", "Framer"],
+    team:[
+      {
+        name: "Célestin Gardinier",
+        avatar: "",
+        role: "CEO & Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Reynaud Colbert",
+        avatar: "",
+        role: "Co-Founder",
+        social: ["instagram", "linkedIn"],
+      },
+      {
+        name: "Arienne Lyon",
+        avatar: "",
+        role: "Managing Director",
+        social: ["instagram", "linkedIn"],
+      },
+    ],
+    openJobs:[{jobID:15}],
     perks:[],
   },
 ]
@@ -558,7 +1108,7 @@ export const jobList = [
   },
   {
     jobID: 2,
-    companyID: 4,
+    companyID: 5,
     companyName: "Dropbox",
     companyLogo: dropboxLogo,
     location: "San Fransisco, United State",
@@ -577,7 +1127,7 @@ export const jobList = [
   },
   {
     jobID: 3,
-    companyID: 4,
+    companyID: 6,
     companyName: "Pitch",
     companyLogo: pitchLogo,
     location: "Berlin, Germany",
@@ -596,7 +1146,7 @@ export const jobList = [
   },
   {
     jobID: 4,
-    companyID: 4,
+    companyID: 7,
     companyName: "Blinkist",
     companyLogo: blinkistLogo,
     location: "Granada, Spain",
@@ -615,7 +1165,7 @@ export const jobList = [
   },
   {
     jobID: 5,
-    companyID: 4,
+    companyID: 8,
     companyName: "ClassPass",
     companyLogo: classPassLogo,
     location: "Manchester, United Kingdom",
@@ -634,7 +1184,7 @@ export const jobList = [
   },
   {
     jobID: 6,
-    companyID: 4,
+    companyID: 9,
     companyName: "Canva",
     companyLogo: canvaLogo,
     location: "Ontario, Canada",
@@ -653,7 +1203,7 @@ export const jobList = [
   },
   {
     jobID: 7,
-    companyID: 4,
+    companyID: 10,
     companyName: "GoDaddy",
     companyLogo: goDaddyLogo,
     location: "Marseille, France",
@@ -672,7 +1222,7 @@ export const jobList = [
   },
   {
     jobID: 8,
-    companyID: 4,
+    companyID: 11,
     companyName: "Twitter",
     companyLogo: twitterLogo,
     location: "San Diego, United State",
@@ -710,7 +1260,7 @@ export const jobList = [
   },
   {
     jobID: 10,
-    companyID: 4,
+    companyID: 12,
     companyName: "Netlify",
     companyLogo: netlifyLogo,
     location: "Paris, France",
@@ -729,7 +1279,7 @@ export const jobList = [
   },
   {
     jobID: 11,
-    companyID: 4,
+    companyID: 13,
     companyName: "Maze",
     companyLogo: mazeLogo,
     location: "San Fransisco, United States",
@@ -748,7 +1298,7 @@ export const jobList = [
   },
   {
     jobID: 12,
-    companyID: 4,
+    companyID: 14,
     companyName: "Terraform",
     companyLogo: terraformLogo,
     location: "Hamburg, Germany",
@@ -767,7 +1317,7 @@ export const jobList = [
   },
   {
     jobID: 13,
-    companyID: 4,
+    companyID: 15,
     companyName: "Udacity",
     companyLogo: udacityLogo,
     location: "Hamburg, Germany",
@@ -786,7 +1336,7 @@ export const jobList = [
   },
   {
     jobID: 14,
-    companyID: 4,
+    companyID: 16,
     companyName: "Packer",
     companyLogo: packerLogo,
     location: "Lucern, Switzerland",
@@ -805,7 +1355,7 @@ export const jobList = [
   },
   {
     jobID: 15,
-    companyID: 4,
+    companyID: 17,
     companyName: "Webflow",
     companyLogo: webflowLogo,
     location: "Lucern, Switzerland",
@@ -824,7 +1374,7 @@ export const jobList = [
   },
   {
     jobID: 16,
-    companyID: 4,
+    companyID: 5,
     companyName: "Dropbox",
     companyLogo: dropboxLogo,
     location: "San Fransisco, United States",
