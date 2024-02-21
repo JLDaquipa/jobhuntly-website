@@ -186,9 +186,9 @@ const JobDetails = () => {
               <p className="line-clamp-3 text-neutral-80">{company.companyProfile}</p>
             </div>
             <div className="grid grid-cols-3 grid-rows-2 max-md:grid-cols-2 gap-3 lg:max-w-[500px] w-full">
-                <img src={`/src/assets/images/companyImages/${company.companyImages[0]}`} alt="company image" className="col-span-2 row-span-2 object-cover h-full rounded-md max-md:col-span-1"/>
-                <img src={`/src/assets/images/companyImages/${company.companyImages[1]}`} alt="company image" className=" object-cover h-full rounded-md"/>
-                <img src={`/src/assets/images/companyImages/${company.companyImages[2]}`} alt="company image" className=" object-cover h-full rounded-md"/>
+                <img src={company.companyImages[0]} alt="company image" className="col-span-2 row-span-2 object-cover h-full rounded-md max-md:col-span-1"/>
+                <img src={company.companyImages[1]} alt="company image" className=" object-cover h-full rounded-md"/>
+                <img src={company.companyImages[2]} alt="company image" className=" object-cover h-full rounded-md"/>
             </div>
           </div>
         </div>

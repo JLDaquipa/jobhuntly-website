@@ -1,6 +1,7 @@
 import { designIcon, salesIcon, marketingIcon, financeIcon, techIcon, engineeringIcon, businessIcon, hrIcon, coffeeIcon, commuterIcon, developmentIcon, giveIcon, healthcareIcon, summitIcon, vacationIcon} from "../assets/icons";
 import { blinkistLogo, canvaLogo, classPassLogo, clayLogo, coinbaseLogo, digitalOceanLogo, discordLogo, divvyLogo, dropboxLogo, foundation, goDaddyLogo, harvardLogo, komodoLogo, krakenLogo, mazeLogo, mediaMonksLogo, netlifyLogo, nomadLogo, nubankLogo, numbrsLogo, packerLogo, pentagramLogo, pitchLogo, prooffeedLogo, revolutLogo, robinhoodLogo, sanofiLogo, squareLogo, stakenetLogo, stripeLogo, terraformLogo, truebillLogo, twitterLogo, udacityLogo, universityOfTorontoLogo, webflowLogo, weTransferLogo, wolffOlinsLogo, zendLogo,} from '../assets/images/companies';
 import { css3Logo,framerLogo,html5Logo,javaScriptLogo,mixpanelLogo,rubyLogo, } from "../assets/images/techImages";
+import { stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4 } from "../assets/images/companyImages";
 
 export const categories = [
   {
@@ -240,7 +241,7 @@ export const companyList = [
     companyLink:"https://nomad.com",
     companyProfile: "Nomad is a software platform for starting and running internet businesses. Millions of businesses rely on Nomad’s software tools to accept payments, expand globally, and manage their businesses online. Nomad has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Nomad is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
     profilePic: nomadLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Australia", "China"],
     industry: ["business service"],
     contact:[
@@ -341,7 +342,7 @@ export const companyList = [
     companyLink:"https://square.com",
     companyProfile: "Square builds common business tools in unconventional ways so more people can start, run, and grow their businesses.",
     profilePic: squareLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["business service"],
     contact:[
@@ -391,7 +392,7 @@ export const companyList = [
     companyLink:"https://revolut.com",
     companyProfile: "Revolut is a financial technology company that offers a range of digital banking services and financial products. Founded in 2015, the London-based company has gained widespread popularity for its innovative approach to banking, providing users with a mobile app that allows them to manage their finances, make international money transfers at competitive exchange rates, and spend money abroad with minimal fees. In addition to traditional banking features, Revolut also offers cryptocurrency trading, budgeting tools, and a variety of other financial services. The platform has rapidly expanded its user base globally and is known for its user-friendly interface and commitment to disrupting traditional banking norms.",
     profilePic: revolutLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["payment gateway"],
     contact:[
@@ -441,7 +442,7 @@ export const companyList = [
     companyLink:"https://dropbox.com",
     companyProfile: "Dropbox is a cloud-based file hosting and collaboration platform that enables users to store and share files seamlessly across devices. Founded in 2007, Dropbox simplifies file management by allowing users to upload documents, photos, and other content to the cloud, making them accessible from anywhere with an internet connection. The platform also facilitates easy collaboration through shared folders, file syncing, and collaboration tools, making it a popular choice for individuals and businesses alike. Dropbox's user-friendly interface and emphasis on synchronization and collaboration have contributed to its widespread adoption as a reliable and convenient solution for file storage and sharing in both personal and professional settings.",
     profilePic: dropboxLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["cloud"],
     contact:[
@@ -491,7 +492,7 @@ export const companyList = [
     companyLink:"https://pitch.com",
     companyProfile: "Pitch is a collaborative presentation software designed to enhance the process of creating, sharing, and collaborating on presentations. Launched in 2020, the Berlin-based company aims to redefine the way teams work on presentations, offering a platform that combines real-time collaboration, beautiful design, and seamless communication. Pitch allows users to create visually appealing and engaging presentations with a variety of templates and design elements. Its emphasis on collaboration enables team members to work together on presentations in real-time, providing a more dynamic and efficient approach to the creation and refinement of slide decks.",
     profilePic: pitchLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["media"],
     contact:[
@@ -541,7 +542,7 @@ export const companyList = [
     companyLink:"https://blinkist.com",
     companyProfile: "Blinkist is a digital platform that offers condensed summaries of non-fiction books, providing users with key insights and takeaways in a format that can be consumed quickly. Launched in 2012, the Berlin-based service aims to cater to individuals seeking to acquire knowledge from a variety of topics without investing the time required to read entire books. Blinkist's library includes summaries, or 'Blinks,' of best-selling non-fiction works, spanning genres such as self-help, business, and technology. The platform is designed to make learning more accessible, allowing users to grasp the main ideas and concepts of a book within a short reading or listening session. Subscribers can choose between reading or listening to the summaries, making it a popular choice for those looking to maximize learning in a time-efficient manner.",
     profilePic: blinkistLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["business service"],
     contact:[
@@ -591,7 +592,7 @@ export const companyList = [
     companyLink:"https://classpass.com",
     companyProfile: "ClassPass is a subscription-based fitness platform that offers users access to a wide variety of fitness classes and studios. Founded in 2013, this service allows members to explore and attend fitness classes in their local area, ranging from traditional gym workouts and yoga sessions to unique and specialized classes like spinning, pilates, and more. Users can book classes through the ClassPass app, providing flexibility and variety in their fitness routines. ClassPass operates on a credit system, with members receiving a certain number of credits per month that they can use to book classes. The platform has gained popularity for its convenience, enabling users to discover and participate in diverse fitness activities without being tied to a single gym membership.",
     profilePic: classPassLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["business service"],
     contact:[
@@ -641,7 +642,7 @@ export const companyList = [
     companyLink:"https://canva.com",
     companyProfile: "Canva is a web-based graphic design platform that enables users to create a wide range of visual content, including presentations, social media graphics, posters, and more, without the need for advanced design skills. Founded in 2012, the platform offers a user-friendly interface with drag-and-drop functionality, making it accessible to individuals and businesses alike. Canva provides a vast library of templates, images, icons, and fonts, allowing users to customize and design professional-looking materials. With both free and premium subscription options, Canva has become a popular tool for anyone looking to produce visually appealing and engaging content for various purposes, from marketing materials to educational resources.",
     profilePic: canvaLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["media", "business service"],
     contact:[
@@ -691,7 +692,7 @@ export const companyList = [
     companyLink:"https://godaddy.com",
     companyProfile: "GoDaddy is a well-known American domain registrar and web hosting company. Founded in 1997, GoDaddy has become one of the largest domain registration and hosting providers globally. The company offers a range of services, including domain registration, website hosting, website building tools, and online marketing solutions for individuals and businesses. GoDaddy is recognized for its user-friendly platform that simplifies the process of acquiring domains, setting up websites, and managing online presence. Additionally, the company provides various tools and services to help users establish and grow their online ventures.",
     profilePic: goDaddyLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["business service"],
     contact:[
@@ -741,7 +742,7 @@ export const companyList = [
     companyLink:"https://twitter.com",
     companyProfile: "Twitter is a prominent social media platform founded in 2006, dedicated to fostering real-time conversations and information sharing globally. With millions of active users, our platform enables individuals, businesses, and organizations to communicate through short-form messages known as 'tweets.' Users can share text, photos, videos, and links, engaging in public discussions and following topics of interest through hashtags. Twitter has become a vital channel for breaking news, cultural trends, and social movements, offering a dynamic space for diverse voices to connect and express themselves. As a company, we are committed to facilitating open dialogue, providing a space for users to express thoughts, connect with others, and stay informed about the latest events and trends.",
     profilePic: twitterLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["media"],
     contact:[
@@ -791,7 +792,7 @@ export const companyList = [
     companyLink:"https://netlify.com",
     companyProfile: "Netlify is a leading web development and hosting platform that empowers companies and developers to build and deploy modern web applications with ease. Since our founding in 2014, we have been committed to streamlining the web development process by offering an all-in-one platform. Developers can deploy websites directly from their Git repositories, taking advantage of features such as continuous integration, serverless functions, and global content delivery. Our platform is designed to enhance collaboration and speed up development workflows, providing a scalable and efficient solution for projects of all sizes. With a focus on simplicity and innovation, Netlify supports the latest web technologies, making it a preferred choice for those seeking a developer-friendly and cutting-edge solution.",
     profilePic: netlifyLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["business service"],
     contact:[
@@ -841,7 +842,7 @@ export const companyList = [
     companyLink:"https://maze.com",
     companyProfile: "Maze is a user testing and usability testing platform that facilitates the design iteration process for digital products. Since its establishment, Maze has been dedicated to helping product teams create better user experiences by offering tools for prototyping, testing, and analyzing user interactions. By leveraging Maze, designers and product managers can turn their designs into interactive prototypes and conduct usability tests with real users. The platform generates valuable insights and analytics, allowing teams to make data-driven decisions and optimize their designs efficiently. Maze aims to streamline the user testing process, ultimately improving the overall user experience of digital products.",
     profilePic: mazeLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["business service"],
     contact:[
@@ -891,7 +892,7 @@ export const companyList = [
     companyLink:"https://terraform.com",
     companyProfile: "Terraform is an open-source infrastructure as code (IaC) tool developed by HashiCorp. It serves as a key component in modern cloud and infrastructure management, enabling users to define and provision infrastructure resources in a declarative configuration language. Terraform supports a wide range of cloud providers, including AWS, Azure, Google Cloud, and more, allowing for a consistent and scalable approach to infrastructure provisioning. By defining infrastructure as code, Terraform provides a collaborative and version-controlled methodology, automating the deployment and management of complex infrastructure setups. Its flexibility, ease of use, and ability to work with multi-cloud environments make Terraform a popular choice among DevOps professionals and organizations embracing cloud technologies.",
     profilePic: terraformLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["cloud", "business service"],
     contact:[
@@ -941,7 +942,7 @@ export const companyList = [
     companyLink:"https://udacity.com",
     companyProfile: "Udacity is a global online education platform focused on providing industry-relevant, technology-driven education. Established in 2012, Udacity collaborates with leading tech companies to offer nanodegree programs and courses in fields such as data science, artificial intelligence, programming, and digital marketing. The platform's unique approach includes project-based learning, mentorship, and real-world applications, designed to equip learners with practical skills and prepare them for careers in rapidly evolving industries. Udacity's emphasis on hands-on experience and collaboration with industry professionals makes it a popular choice for individuals seeking to advance their careers in technology and other high-demand fields.",
     profilePic: udacityLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["business service"],
     contact:[
@@ -991,7 +992,7 @@ export const companyList = [
     companyLink:"https://packer.com",
     companyProfile: "Packer is an open-source tool developed by HashiCorp that automates the creation of identical machine images for multiple platforms from a single source configuration. Released in 2013, Packer allows developers and operations teams to define machine images as code, providing a consistent and reproducible process for creating virtual machine and container images. Supporting various providers such as AWS, Azure, Docker, and more, Packer helps streamline the image-building process, ensuring that development, testing, and production environments are aligned. By automating the image creation process, Packer enhances infrastructure as code (IaC) practices, enabling organizations to efficiently manage and deploy standardized machine images across diverse cloud and on-premises environments.",
     profilePic: packerLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["media","business service"],
     contact:[
@@ -1041,7 +1042,7 @@ export const companyList = [
     companyLink:"https://packer.com",
     companyProfile: "Webflow, founded in 2013, is a web design and development platform that empowers users to create responsive, visually stunning websites without the need for coding expertise. Catering to both designers and developers, Webflow combines a robust visual editor with powerful design and hosting capabilities. Users can build custom websites, e-commerce stores, and landing pages using a drag-and-drop interface, while also having the flexibility to dive into the underlying code for more advanced customization. With features like CMS (Content Management System) functionality and seamless integrations, Webflow streamlines the web development process, offering a comprehensive solution for those seeking to design and launch professional websites efficiently.",
     profilePic: webflowLogo,
-    companyImages: ["stripe-comany-image-1.jpg","stripe-comany-image-2.jpg","stripe-comany-image-3.jpg","stripe-comany-image-4.jpg"],
+    companyImages: [stripe_company_image_1,stripe_company_image_2,stripe_company_image_3,stripe_company_image_4],
     officeLocations: ["United States", "Japan", "Australia", "China"],
     industry: ["business service","media"],
     contact:[

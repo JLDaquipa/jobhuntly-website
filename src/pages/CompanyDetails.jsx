@@ -111,10 +111,10 @@ const CompanyDetails = () => {
               </div>
               {/* Company Images */}
               <div className="grid grid-cols-3 grid-rows-3 gap-3 w-full">
-                <img src={`/src/assets/images/companyImages/${company.companyImages[0]}`} alt="company image" className="col-span-2 row-span-3 object-cover h-full rounded-md max-md:row-span-2 max-md:col-span-3"/>
-                <img src={`/src/assets/images/companyImages/${company.companyImages[1]}`} alt="company image" className=" object-cover h-full rounded-md"/>
-                <img src={`/src/assets/images/companyImages/${company.companyImages[2]}`} alt="company image" className=" object-cover h-full rounded-md"/>
-                <img src={`/src/assets/images/companyImages/${company.companyImages[3]}`} alt="company image" className=" object-cover h-full rounded-md"/>
+                <img src={company.companyImages[0]} alt="company image" className="col-span-2 row-span-3 object-cover h-full rounded-md max-md:row-span-2 max-md:col-span-3"/>
+                <img src={company.companyImages[1]} alt="company image" className=" object-cover h-full rounded-md"/>
+                <img src={company.companyImages[2]} alt="company image" className=" object-cover h-full rounded-md"/>
+                <img src={company.companyImages[3]} alt="company image" className=" object-cover h-full rounded-md"/>
               </div>
             </div>
             {/* Second Col */}
