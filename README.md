@@ -1,8 +1,20 @@
-# React + Vite
+# Jobhuntly Website 🏅
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://jl-daquipa-jobhuntly.netlify.app/
 
-Currently, two official plugins are available:
+<h3>Website Description:</h3>
+Jobhuntly is an innovative job platform template that connects job seekers and employers with captivating visuals and user-friendly features. Empower businesses to hire exceptional talent and offer exciting opportunities.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3>Project Description:</h3>
+A project where I train myself from transforming Figma design into a functioning website.
+
+<a href="https://www.figma.com/file/0uesQlAXUH1GPjtD5VxVBt/Jobhuntly---Job-Board-%26-Portal-UI-Kit-(Community)-(Copy)?type=design&mode=design&t=i7wOmCtVayQqS0jO-1">Go to Figma file</a>
+
+<h3>Technologies and libraries used</h3> 
+<table>
+    <tr>
+        <td>Reactjs</td>
+        <td>Tailwind CSS</td>
+        <td>Figma</td>
+    </tr>
+</table>
